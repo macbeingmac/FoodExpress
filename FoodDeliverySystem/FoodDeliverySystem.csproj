@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{214212FD-D35D-480E-92E4-82B24AF4D5A5}</ProjectGuid>
+    <ProjectGuid>{EBE32FDE-865E-41C7-A700-B3D7F85378E4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>FoodDeliverySystem</RootNamespace>
     <AssemblyName>FoodDeliverySystem</AssemblyName>
@@ -43,11 +43,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="modules\Admin.cs" />
+    <Compile Include="modules\Customer.cs" />
+    <Compile Include="modules\Delivery.cs" />
+    <Compile Include="modules\DeliveryStaff.cs" />
+    <Compile Include="modules\MenuItem.cs" />
+    <Compile Include="modules\Order.cs" />
+    <Compile Include="modules\Person.cs" />
+    <Compile Include="modules\Restaurant.cs" />
+    <Compile Include="modules\Review.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="services\AdminService.cs" />
+    <Compile Include="services\DeliveryService.cs" />
+    <Compile Include="services\MenuService.cs" />
+    <Compile Include="services\OrderService.cs" />
+    <Compile Include="services\RestaurantService.cs" />
+    <Compile Include="services\ReviewService.cs" />
+    <Compile Include="views\AdminUI.cs" />
+    <Compile Include="views\CustomerUI.cs" />
+    <Compile Include="views\DeliveryUI.cs" />
+    <Compile Include="views\MenuUI.cs" />
+    <Compile Include="views\OrderUI.cs" />
+    <Compile Include="views\RestaurantUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="forms\TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
