@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ABD1E875-4FAB-47D4-A849-F5C7495D2EDF}</ProjectGuid>
+    <ProjectGuid>{214212FD-D35D-480E-92E4-82B24AF4D5A5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleApp1</RootNamespace>
-    <AssemblyName>ConsoleApp1</AssemblyName>
+    <RootNamespace>FoodDeliverySystem</RootNamespace>
+    <AssemblyName>FoodDeliverySystem</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,15 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Services\DeliveryService.cs" />
-    <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\Delivery.cs" />
-    <Compile Include="Models\Deliverystaff.cs" />
-    <Compile Include="Models\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\Restaurent.cs" />
-    <Compile Include="Services\RestaurentService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

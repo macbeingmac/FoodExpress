@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDeliverySystem", "ConsoleApp1\FoodDeliverySystem.csproj", "{ABD1E875-4FAB-47D4-A849-F5C7495D2EDF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDeliverySystem", "FoodDeliverySystem\FoodDeliverySystem.csproj", "{214212FD-D35D-480E-92E4-82B24AF4D5A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ABD1E875-4FAB-47D4-A849-F5C7495D2EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ABD1E875-4FAB-47D4-A849-F5C7495D2EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ABD1E875-4FAB-47D4-A849-F5C7495D2EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ABD1E875-4FAB-47D4-A849-F5C7495D2EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{214212FD-D35D-480E-92E4-82B24AF4D5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214212FD-D35D-480E-92E4-82B24AF4D5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214212FD-D35D-480E-92E4-82B24AF4D5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214212FD-D35D-480E-92E4-82B24AF4D5A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {927C58ED-2234-4791-ABF8-8F8EDD83E722}
+		SolutionGuid = {3498B13C-C7CB-4D5F-AA84-E811384D5E64}
 	EndGlobalSection
 EndGlobal
