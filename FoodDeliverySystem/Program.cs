@@ -12,16 +12,33 @@ namespace FoodDeliverySystem
     {
         static void Main(string[] args)
         {
-            // Your test code
-            DeliveryStaff driver = new DeliveryStaff(3, "Charlie", "Bike");
-            Console.WriteLine("Delivery Driver Info:");
-            Console.WriteLine("ID: " + driver.GetId());
-            Console.WriteLine("Name: " + driver.GetName());
-            Console.WriteLine("Vehicle: " + driver.GetVehicle());
-            
+            AdminService adminService = new AdminService();
 
-            // 👇 This line keeps the console window open
-            Console.ReadLine();
+            // Ask user for admin details
+            Console.Write("Enter Admin ID (number): ");
+            int id = Convert.ToInt32(Console.ReadLine());  //  fix here
+
+            Console.Write("Enter Admin Name: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Enter Admin Password: ");
+            string password = Console.ReadLine();
+
+            // Now call method correctly
+            adminService.AddAdmin(id, name, password);
+
+
+            // Try to log in
+            Console.Write("\nLogin - Enter Name: ");
+            string loginName = Console.ReadLine();
+
+            Console.Write("Enter Password: ");
+            string loginPassword = Console.ReadLine();
+
+            adminService.Login(loginName, loginPassword);
+
+            Console.WriteLine("\nPress any key to exit...");
+            Console.ReadKey();
 
         }
     }
