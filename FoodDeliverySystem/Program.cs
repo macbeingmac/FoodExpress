@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FoodDeliverySystem.services;
+using FoodDeliverySystem.modules;
 
 namespace FoodDeliverySystem
 {
@@ -11,22 +12,37 @@ namespace FoodDeliverySystem
     {
         static void Main(string[] args)
         {
-            RestaurantService rs = new RestaurantService();
+            AdminService adminService = new AdminService();
 
-            rs.AddRestaurant("Burger Shack", "Main Street");
-            rs.AddRestaurant("Pizza Palace", "Ocean Road");
+            // Ask user for admin details
+            Console.Write("Enter Admin ID (number): ");
+            int id = Convert.ToInt32(Console.ReadLine());  //  fix here
 
-            rs.ViewRestaurants();
+            Console.Write("Enter Admin Name: ");
+            string name = Console.ReadLine();
 
-            rs.UpdateRestaurant(1, "Burger Heaven", "Sunset Ave");
+            Console.Write("Enter Admin Password: ");
+            string password = Console.ReadLine();
 
-            rs.ViewRestaurants();
+            // Now call method correctly
+            adminService.AddAdmin(id, name, password);
 
-            rs.DeleteRestaurant(2);
 
-            rs.ViewRestaurants();
+            // Try to log in
+            Console.Write("\nLogin - Enter Name: ");
+            string loginName = Console.ReadLine();
 
-            Console.ReadLine(); // Keep console open
+            Console.Write("Enter Password: ");
+            string loginPassword = Console.ReadLine();
+
+            adminService.Login(loginName, loginPassword);
+
+            Console.WriteLine("\nPress any key to exit...");
+            Console.ReadKey();
+
         }
     }
+
 }
+
+

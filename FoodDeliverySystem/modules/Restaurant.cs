@@ -15,9 +15,9 @@ namespace FoodDeliverySystem.modules
         // Constructor
         public Restaurant(int id, string name, string address)
         {
-            SetId(id);
-            SetName(name);
-            SetAddress(address);
+            this.id = id;
+            this.name = name;
+            this.address = address;
         }
 
         // ID Getter & Setter
