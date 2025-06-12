@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,15 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="modules\Admin.cs" />
-    <Compile Include="modules\Customer.cs" />
-    <Compile Include="modules\Delivery.cs" />
-    <Compile Include="modules\DeliveryStaff.cs" />
-    <Compile Include="modules\MenuItem.cs" />
-    <Compile Include="modules\Order.cs" />
-    <Compile Include="modules\Person.cs" />
-    <Compile Include="modules\Restaurant.cs" />
-    <Compile Include="modules\Review.cs" />
+    <Compile Include="models\Admin.cs" />
+    <Compile Include="models\Customer.cs" />
+    <Compile Include="models\Delivery.cs" />
+    <Compile Include="models\DeliveryStaff.cs" />
+    <Compile Include="models\MenuItem.cs" />
+    <Compile Include="models\Order.cs" />
+    <Compile Include="models\Person.cs" />
+    <Compile Include="models\Restaurant.cs" />
+    <Compile Include="models\Review.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="services\AdminService.cs" />
@@ -66,6 +68,12 @@
     <Compile Include="views\MenuUI.cs" />
     <Compile Include="views\OrderUI.cs" />
     <Compile Include="views\RestaurantUI.cs" />
+    <Compile Include="views\Systemlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Systemlogin.Designer.cs">
+      <DependentUpon>Systemlogin.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
