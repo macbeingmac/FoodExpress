@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace FoodDeliverySystem.modules
 {
     class Delivery
-{
+    {
         // Fields (private to ensure encapsulation)
         private int deliveryId;
         private int orderId;
