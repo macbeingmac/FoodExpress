@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using FoodDeliverySystem.modules;
 
-namespace FoodDeliverySystem.modules
+
+namespace FoodDeliverySystem.services
 {
-    class Delivery
-    // This class handles delivery-related operations (CRUD)
-    public class DeliveryService
+    class DeliveryService
+
     {
         private List<Delivery> deliveries = new List<Delivery>();
         private int nextDeliveryId = 1;

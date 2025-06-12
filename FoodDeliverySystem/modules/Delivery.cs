@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodDeliverySystem.services
+namespace FoodDeliverySystem.modules
 {
-    class DeliveryService
-
+    class Delivery
+{
         // Fields (private to ensure encapsulation)
         private int deliveryId;
         private int orderId;
