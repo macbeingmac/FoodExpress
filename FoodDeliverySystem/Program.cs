@@ -12,33 +12,25 @@ namespace FoodDeliverySystem
     {
         static void Main(string[] args)
         {
-            AdminService adminService = new AdminService();
+            // Setup dummy customer and restaurant
+            Customer customer = new Customer(1, "John Doe", "123 Street", "0781234567");
+            Restaurant restaurant = new Restaurant(1, "Pizza Palace", "Downtown");
 
-            // Ask user for admin details
-            Console.Write("Enter Admin ID (number): ");
-            int id = Convert.ToInt32(Console.ReadLine());  //  fix here
+            // Dummy menu items
+            MenuItem item1 = new MenuItem(1, "Cheese Pizza", 1500.0, true);
+            MenuItem item2 = new MenuItem(2, "Veg Pizza", 1300.0, true);
+            List<MenuItem> orderedItems = new List<MenuItem> { item1, item2 };
 
-            Console.Write("Enter Admin Name: ");
-            string name = Console.ReadLine();
+            // Create the OrderService
+            OrderService orderService = new OrderService();
 
-            Console.Write("Enter Admin Password: ");
-            string password = Console.ReadLine();
+            // Place an order
+            orderService.PlaceOrder(customer, restaurant, orderedItems);
 
-            // Now call method correctly
-            adminService.AddAdmin(id, name, password);
+            // View all orders
+            orderService.ViewOrders();
 
-
-            // Try to log in
-            Console.Write("\nLogin - Enter Name: ");
-            string loginName = Console.ReadLine();
-
-            Console.Write("Enter Password: ");
-            string loginPassword = Console.ReadLine();
-
-            adminService.Login(loginName, loginPassword);
-
-            Console.WriteLine("\nPress any key to exit...");
-            Console.ReadKey();
+            Console.ReadLine(); // Keep the console window open
 
         }
     }
