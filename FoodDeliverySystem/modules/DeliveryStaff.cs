@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 namespace FoodDeliverySystem.modules
 {
-    class DeliveryStaff
+    class DeliveryStaff : Person
     {
+        private string vehicle;
+
+        // Constructor
+        public DeliveryStaff(int id, string name, string vehicle)
+            : base(id, name)
+        {
+            this.vehicle = vehicle;
+        }
+
+        // Getter and Setter for Vehicle
+        public string GetVehicle()
+        {
+            return vehicle;
+        }
+
+        public void SetVehicle(string value)
+        {
+            vehicle = value;
+        }
     }
 }

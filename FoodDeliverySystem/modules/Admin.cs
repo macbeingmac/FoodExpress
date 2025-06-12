@@ -6,7 +6,25 @@ using System.Threading.Tasks;
 
 namespace FoodDeliverySystem.modules
 {
-    class Admin_
+    class Admin : Person
     {
+        private string password;
+
+        // Constructor
+        public Admin(int id, string name, string password): base(id, name)
+        {
+            this.password = password;
+        }
+
+        // Getter and Setter for Password
+        public string GetPassword()
+        {
+            return password;
+        }
+
+        public void SetPassword(string value)
+        {
+            password = value;
+        }
     }
 }

@@ -8,5 +8,6 @@ namespace FoodDeliverySystem.services
 {
     class AdminService
     {
+
     }
 }

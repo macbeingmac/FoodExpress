@@ -36,6 +36,8 @@ namespace FoodDeliverySystem.modules
         }
 
         public void SetPhone(string value)
-    {
+        {
+            phone = value;
+        }
     }
 }

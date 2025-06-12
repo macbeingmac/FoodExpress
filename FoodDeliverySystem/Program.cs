@@ -12,13 +12,16 @@ namespace FoodDeliverySystem
     {
         static void Main(string[] args)
         {
-            Customer customer = new Customer(1, "Alice", "123 Main St", "9876543210");
-            Console.WriteLine("Customer Info:");
-            Console.WriteLine("ID: " + customer.GetId());
-            Console.WriteLine("Name: " + customer.GetName());
-            Console.WriteLine("Address: " + customer.GetAddress());
-            Console.WriteLine("Phone: " + customer.GetPhone());
-            Console.WriteLine();
+            // Your test code
+            DeliveryStaff driver = new DeliveryStaff(3, "Charlie", "Bike");
+            Console.WriteLine("Delivery Driver Info:");
+            Console.WriteLine("ID: " + driver.GetId());
+            Console.WriteLine("Name: " + driver.GetName());
+            Console.WriteLine("Vehicle: " + driver.GetVehicle());
+            
+
+            // 👇 This line keeps the console window open
+            Console.ReadLine();
 
         }
     }
