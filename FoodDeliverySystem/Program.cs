@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FoodDeliverySystem.services;
+using FoodDeliverySystem.modules;
 
 namespace FoodDeliverySystem
 {
@@ -11,22 +12,27 @@ namespace FoodDeliverySystem
     {
         static void Main(string[] args)
         {
-            RestaurantService rs = new RestaurantService();
+            ReviewService reviewService = new ReviewService();
 
-            rs.AddRestaurant("Burger Shack", "Main Street");
-            rs.AddRestaurant("Pizza Palace", "Ocean Road");
+            // 1. Add reviews
+            reviewService.AddReview("Alice", "Amazing food and fast delivery!", 5);
+            reviewService.AddReview("Bob", "Good but delivery was late.", 3);
+            reviewService.AddReview("Charlie", "Food was cold, not happy.", 2);
 
-            rs.ViewRestaurants();
+            // 2. Show all reviews
+            Console.WriteLine("📝 All Customer Reviews:");
+            reviewService.ShowReviews();
 
-            rs.UpdateRestaurant(1, "Burger Heaven", "Sunset Ave");
+            // 3. Delete a review
+            Console.WriteLine("\n❌ Deleting review with ID = 2...");
+            reviewService.DeleteReview(2);
 
-            rs.ViewRestaurants();
+            // 4. Show updated reviews
+            Console.WriteLine("\n✅ Updated Reviews:");
+            reviewService.ShowReviews();
 
-            rs.DeleteRestaurant(2);
-
-            rs.ViewRestaurants();
-
-            Console.ReadLine(); // Keep console open
+            Console.WriteLine("\nPress any key to exit...");
+            Console.ReadKey();
 
         }
     }
