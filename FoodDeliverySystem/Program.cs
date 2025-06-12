@@ -12,27 +12,13 @@ namespace FoodDeliverySystem
     {
         static void Main(string[] args)
         {
-            ReviewService reviewService = new ReviewService();
-
-            // 1. Add reviews
-            reviewService.AddReview("Alice", "Amazing food and fast delivery!", 5);
-            reviewService.AddReview("Bob", "Good but delivery was late.", 3);
-            reviewService.AddReview("Charlie", "Food was cold, not happy.", 2);
-
-            // 2. Show all reviews
-            Console.WriteLine("📝 All Customer Reviews:");
-            reviewService.ShowReviews();
-
-            // 3. Delete a review
-            Console.WriteLine("\n❌ Deleting review with ID = 2...");
-            reviewService.DeleteReview(2);
-
-            // 4. Show updated reviews
-            Console.WriteLine("\n✅ Updated Reviews:");
-            reviewService.ShowReviews();
-
-            Console.WriteLine("\nPress any key to exit...");
-            Console.ReadKey();
+            Customer customer = new Customer(1, "Alice", "123 Main St", "9876543210");
+            Console.WriteLine("Customer Info:");
+            Console.WriteLine("ID: " + customer.GetId());
+            Console.WriteLine("Name: " + customer.GetName());
+            Console.WriteLine("Address: " + customer.GetAddress());
+            Console.WriteLine("Phone: " + customer.GetPhone());
+            Console.WriteLine();
 
         }
     }
