@@ -68,11 +68,29 @@
     <Compile Include="views\AdminRegisterForm.Designer.cs">
       <DependentUpon>AdminRegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\Customerregisterform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Customerregisterform.Designer.cs">
+      <DependentUpon>Customerregisterform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Deliveryregisterform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Deliveryregisterform.Designer.cs">
+      <DependentUpon>Deliveryregisterform.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Loginform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\Loginform.Designer.cs">
       <DependentUpon>Loginform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Restaurantregisterform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Restaurantregisterform.Designer.cs">
+      <DependentUpon>Restaurantregisterform.cs</DependentUpon>
     </Compile>
     <Compile Include="views\Startform.cs">
       <SubType>Form</SubType>
@@ -97,8 +115,17 @@
     <EmbeddedResource Include="views\AdminRegisterForm.resx">
       <DependentUpon>AdminRegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\Customerregisterform.resx">
+      <DependentUpon>Customerregisterform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Deliveryregisterform.resx">
+      <DependentUpon>Deliveryregisterform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Loginform.resx">
       <DependentUpon>Loginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Restaurantregisterform.resx">
+      <DependentUpon>Restaurantregisterform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\Startform.resx">
       <DependentUpon>Startform.cs</DependentUpon>

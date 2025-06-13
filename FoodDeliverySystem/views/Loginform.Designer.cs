@@ -39,7 +39,7 @@
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
-            this.lblLogin.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lblLogin.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.Location = new System.Drawing.Point(277, 79);
             this.lblLogin.Name = "lblLogin";
