@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace FoodDeliverySystem.views
 {
-    public partial class Startform: Form
+    public partial class Startform : Form
     {
         public Startform()
         {
@@ -23,5 +23,13 @@ namespace FoodDeliverySystem.views
             loginForm.Show();
             this.Hide();
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            Usertypeselectionform selectionForm = new Usertypeselectionform(); // Note: Your class name is Usertypeselectionform
+            selectionForm.Show();
+            this.Hide();
+        }
+
     }
 }
