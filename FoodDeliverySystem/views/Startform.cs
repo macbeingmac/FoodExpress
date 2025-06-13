@@ -16,5 +16,12 @@ namespace FoodDeliverySystem.views
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Loginform loginForm = new Loginform(); // Note: Your class name is Loginform
+            loginForm.Show();
+            this.Hide();
+        }
     }
 }

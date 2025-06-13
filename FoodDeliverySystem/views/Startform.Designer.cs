@@ -39,41 +39,46 @@
             this.lblWelcome.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.Color.Navy;
-            this.lblWelcome.Location = new System.Drawing.Point(168, 83);
+            this.lblWelcome.Location = new System.Drawing.Point(126, 67);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(533, 40);
+            this.lblWelcome.Size = new System.Drawing.Size(499, 36);
             this.lblWelcome.TabIndex = 0;
             this.lblWelcome.Text = "Welcome to Food Delivery System";
             // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.SystemColors.Info;
-            this.btnLogin.Location = new System.Drawing.Point(373, 175);
+            this.btnLogin.Location = new System.Drawing.Point(280, 142);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.Size = new System.Drawing.Size(56, 35);
             this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnRegister
             // 
             this.btnRegister.BackColor = System.Drawing.SystemColors.Info;
             this.btnRegister.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnRegister.Location = new System.Drawing.Point(373, 240);
+            this.btnRegister.Location = new System.Drawing.Point(280, 195);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(75, 23);
+            this.btnRegister.Size = new System.Drawing.Size(56, 35);
             this.btnRegister.TabIndex = 2;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
             // 
             // Startform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblWelcome);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Startform";
             this.Text = "Startform";
             this.ResumeLayout(false);
