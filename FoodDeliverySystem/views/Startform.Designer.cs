@@ -42,7 +42,7 @@
             this.lblWelcome.Location = new System.Drawing.Point(126, 67);
             this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(499, 36);
+            this.lblWelcome.Size = new System.Drawing.Size(429, 31);
             this.lblWelcome.TabIndex = 0;
             this.lblWelcome.Text = "Welcome to Food Delivery System";
             // 
@@ -50,7 +50,7 @@
             // 
             this.btnLogin.BackColor = System.Drawing.SystemColors.Info;
             this.btnLogin.Location = new System.Drawing.Point(280, 142);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(56, 35);
             this.btnLogin.TabIndex = 1;
@@ -63,12 +63,13 @@
             this.btnRegister.BackColor = System.Drawing.SystemColors.Info;
             this.btnRegister.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnRegister.Location = new System.Drawing.Point(280, 195);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(56, 35);
             this.btnRegister.TabIndex = 2;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click_1);
             // 
             // Startform
             // 
@@ -78,7 +79,7 @@
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblWelcome);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Startform";
             this.Text = "Startform";
             this.ResumeLayout(false);
