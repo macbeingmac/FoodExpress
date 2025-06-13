@@ -74,6 +74,12 @@
     <Compile Include="views\Startform.Designer.cs">
       <DependentUpon>Startform.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\Usertypeselectionform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Usertypeselectionform.Designer.cs">
+      <DependentUpon>Usertypeselectionform.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -87,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\Startform.resx">
       <DependentUpon>Startform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Usertypeselectionform.resx">
+      <DependentUpon>Usertypeselectionform.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

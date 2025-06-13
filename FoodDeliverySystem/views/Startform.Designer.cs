@@ -37,11 +37,11 @@
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.Color.Navy;
             this.lblWelcome.Location = new System.Drawing.Point(168, 83);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(499, 36);
+            this.lblWelcome.Size = new System.Drawing.Size(533, 40);
             this.lblWelcome.TabIndex = 0;
             this.lblWelcome.Text = "Welcome to Food Delivery System";
             // 
