@@ -62,11 +62,23 @@
     <Compile Include="services\OrderService.cs" />
     <Compile Include="services\RestaurantService.cs" />
     <Compile Include="services\ReviewService.cs" />
+    <Compile Include="views\Loginform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Loginform.Designer.cs">
+      <DependentUpon>Loginform.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Startform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\Startform.Designer.cs">
       <DependentUpon>Startform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Usertypeselectionform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Usertypeselectionform.Designer.cs">
+      <DependentUpon>Usertypeselectionform.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -76,8 +88,14 @@
     <Content Include="forms\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="views\Loginform.resx">
+      <DependentUpon>Loginform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Startform.resx">
       <DependentUpon>Startform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Usertypeselectionform.resx">
+      <DependentUpon>Usertypeselectionform.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
