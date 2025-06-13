@@ -85,7 +85,7 @@
             this.btnLogin.ForeColor = System.Drawing.SystemColors.InfoText;
             this.btnLogin.Location = new System.Drawing.Point(283, 300);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.Size = new System.Drawing.Size(89, 42);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;

@@ -62,6 +62,12 @@
     <Compile Include="services\OrderService.cs" />
     <Compile Include="services\RestaurantService.cs" />
     <Compile Include="services\ReviewService.cs" />
+    <Compile Include="views\AdminRegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\AdminRegisterForm.Designer.cs">
+      <DependentUpon>AdminRegisterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Loginform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     <Content Include="forms\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="views\AdminRegisterForm.resx">
+      <DependentUpon>AdminRegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Loginform.resx">
       <DependentUpon>Loginform.cs</DependentUpon>
     </EmbeddedResource>
