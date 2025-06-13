@@ -62,24 +62,15 @@
     <Compile Include="services\OrderService.cs" />
     <Compile Include="services\RestaurantService.cs" />
     <Compile Include="services\ReviewService.cs" />
-    <Compile Include="views\AdminUI.cs" />
-    <Compile Include="views\CustomerUI.cs" />
-    <Compile Include="views\DeliveryUI.cs" />
-    <Compile Include="views\MenuUI.cs" />
-    <Compile Include="views\OrderUI.cs" />
-    <Compile Include="views\RestaurantUI.cs" />
-    <Compile Include="views\Systemlogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="views\Systemlogin.Designer.cs">
-      <DependentUpon>Systemlogin.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="forms\TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
