@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FoodDeliverySystem.modules;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,47 @@ namespace FoodDeliverySystem.views
 {
     public partial class Customerdashboardform: Form
     {
-        public Customerdashboardform()
+        private Customer loggedInCustomer;
+
+        public Customerdashboardform(Customer customer)
         {
             InitializeComponent();
+            loggedInCustomer = customer;
         }
 
         private void btnBrowseRestaurants_Click(object sender, EventArgs e)
         {
+            Browserestaurants form = new Browserestaurants();
+            form.ShowDialog();
+        }
 
+        private void btnViewMenu_Click(object sender, EventArgs e)
+        {
+            Viewmenu = new Viewmenu();
+            form.ShowDialog();
+        }
+
+        private void btnPlaceOrder_Click(object sender, EventArgs e)
+        {
+            Placeorder form = new Placeorder(loggedInCustomer);
+            form.ShowDialog();
+        }
+
+        private void btnViewOrders_Click(object sender, EventArgs e)
+        {
+            Viewmyorder form = new Viewmyorder(loggedInCustomer);
+            form.ShowDialog();
+        }
+
+        private void btnLeaveaReview_Click(object sender, EventArgs e)
+        {
+            Leaveareview form = new Leaveareview(loggedInCustomer);
+            form.ShowDialog();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

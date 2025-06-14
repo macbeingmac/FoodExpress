@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FoodDeliverySystem.modules
 {
-    class Customer: Person
+    public class Customer: Person
     {
         private string address;
         private string phone;
