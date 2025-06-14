@@ -64,6 +64,10 @@ namespace FoodDeliverySystem.views
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-    
+
+        private void txtVehicleType_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -83,7 +83,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(195, 113);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(200, 20);
             this.txtName.TabIndex = 4;
@@ -91,15 +91,16 @@
             // txtVehicleType
             // 
             this.txtVehicleType.Location = new System.Drawing.Point(195, 148);
-            this.txtVehicleType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtVehicleType.Margin = new System.Windows.Forms.Padding(2);
             this.txtVehicleType.Name = "txtVehicleType";
             this.txtVehicleType.Size = new System.Drawing.Size(200, 20);
             this.txtVehicleType.TabIndex = 5;
+            this.txtVehicleType.TextChanged += new System.EventHandler(this.txtVehicleType_TextChanged);
             // 
             // txtCreatePassword
             // 
             this.txtCreatePassword.Location = new System.Drawing.Point(195, 184);
-            this.txtCreatePassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCreatePassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtCreatePassword.Name = "txtCreatePassword";
             this.txtCreatePassword.Size = new System.Drawing.Size(200, 20);
             this.txtCreatePassword.TabIndex = 6;
@@ -108,7 +109,7 @@
             // 
             this.btnRegister.BackColor = System.Drawing.SystemColors.Info;
             this.btnRegister.Location = new System.Drawing.Point(254, 243);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(65, 30);
             this.btnRegister.TabIndex = 7;
@@ -129,7 +130,7 @@
             this.Controls.Add(this.lblVehicleType);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblDeliveryregisterform);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Deliveryregisterform";
             this.Text = "Deliveryregisterform";
             this.ResumeLayout(false);
