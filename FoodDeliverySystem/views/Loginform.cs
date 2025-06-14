@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using FoodDeliverySystem.database;
+using FoodDeliverySystem.modules;
 
 namespace FoodDeliverySystem.views
 {
@@ -56,7 +57,15 @@ namespace FoodDeliverySystem.views
                     case "admin":
                         dashboard = new Admindashboardform(); break;
                     case "customer":
-                        dashboard = new Customerdashboardform(); break;
+                        {
+                            Customer customer = GetCustomerFromDB(username, password);
+                            if (customer != null)
+                            {
+                                dashboard = new Customerdashboardform(customer);
+                            }
+                            break;
+                        }
+
                     case "restaurant":
                         dashboard = new Restaurantdashboardform(); break;
                     case "deliverystaff":
@@ -108,5 +117,43 @@ namespace FoodDeliverySystem.views
 
             return false;
         }
+
+
+        private Customer GetCustomerFromDB(string username, string password)
+        {
+            string query = "SELECT * FROM customer WHERE name = @name AND password = @password";
+
+            using (MySqlConnection conn = DbConnection.GetConnection())
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@name", username);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            int id = Convert.ToInt32(reader["id"]);
+                            string name = reader["name"].ToString();
+                            string pass = reader["password"].ToString();
+                            string address = reader["address"].ToString();
+                            string phone = reader["phone"].ToString();
+
+                            return new Customer(id, name, pass, address, phone);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error fetching customer: " + ex.Message);
+                }
+            }
+
+            return null;
+        }
+
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using FoodDeliverySystem.modules;
@@ -14,9 +15,9 @@ namespace FoodDeliverySystem.services
         private int nextId = 1;
 
         // Creating a restaurent
-        public void AddRestaurant(string name, string address)
+        public void AddRestaurant(string name, string address, string password)
         {
-            Restaurant r = new Restaurant(nextId++, name, address);
+            Restaurant r = new Restaurant(nextId++, name, address,password);
             restaurants.Add(r);
         }
 
