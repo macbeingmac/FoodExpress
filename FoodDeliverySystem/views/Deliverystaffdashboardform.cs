@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace FoodDeliverySystem.views
 {
-    public partial class Deliverystaffdashboardform: Form
+    public partial class Deliverystaffdashboardform : Form
     {
         private DeliveryStaff loggedInStaff;
 
@@ -26,7 +26,7 @@ namespace FoodDeliverySystem.views
             Viewassigneddeliveries form = new Viewassigneddeliveries(loggedInStaff);
             form.ShowDialog();
         }
-            
+
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -37,5 +37,7 @@ namespace FoodDeliverySystem.views
         {
             Updatedeliverystatus form = new Updatedeliverystatus(loggedInStaff);
             form.ShowDialog();
+
+        }
     }
 }
