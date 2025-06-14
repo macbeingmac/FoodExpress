@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.lblUserTypePrompt = new System.Windows.Forms.Label();
-            this.rbAdmin = new System.Windows.Forms.RadioButton();
-            this.rbCustomer = new System.Windows.Forms.RadioButton();
-            this.rbDeliveryStaff = new System.Windows.Forms.RadioButton();
-            this.rbRestaurant = new System.Windows.Forms.RadioButton();
-            this.btnContinue = new System.Windows.Forms.Button();
+            this.btnAdmin = new System.Windows.Forms.Button();
+            this.btnCustomer = new System.Windows.Forms.Button();
+            this.btnDeliveryStaff = new System.Windows.Forms.Button();
+            this.btnRestaurant = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUserTypePrompt
@@ -46,70 +45,51 @@
             this.lblUserTypePrompt.TabIndex = 0;
             this.lblUserTypePrompt.Text = "Select user type to register";
             // 
-            // rbAdmin
+            // btnAdmin
             // 
-            this.rbAdmin.AutoSize = true;
-            this.rbAdmin.Location = new System.Drawing.Point(335, 172);
-            this.rbAdmin.Name = "rbAdmin";
-            this.rbAdmin.Size = new System.Drawing.Size(66, 20);
-            this.rbAdmin.TabIndex = 1;
-            this.rbAdmin.TabStop = true;
-            this.rbAdmin.Text = "Admin";
-            this.rbAdmin.UseVisualStyleBackColor = true;
+            this.btnAdmin.Location = new System.Drawing.Point(336, 160);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(141, 37);
+            this.btnAdmin.TabIndex = 6;
+            this.btnAdmin.Text = "Admin";
+            this.btnAdmin.UseVisualStyleBackColor = true;
             // 
-            // rbCustomer
+            // btnCustomer
             // 
-            this.rbCustomer.AutoSize = true;
-            this.rbCustomer.Location = new System.Drawing.Point(335, 213);
-            this.rbCustomer.Name = "rbCustomer";
-            this.rbCustomer.Size = new System.Drawing.Size(85, 20);
-            this.rbCustomer.TabIndex = 2;
-            this.rbCustomer.TabStop = true;
-            this.rbCustomer.Text = "Customer";
-            this.rbCustomer.UseVisualStyleBackColor = true;
+            this.btnCustomer.Location = new System.Drawing.Point(336, 216);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.Size = new System.Drawing.Size(141, 40);
+            this.btnCustomer.TabIndex = 7;
+            this.btnCustomer.Text = "Customer";
+            this.btnCustomer.UseVisualStyleBackColor = true;
             // 
-            // rbDeliveryStaff
+            // btnDeliveryStaff
             // 
-            this.rbDeliveryStaff.AutoSize = true;
-            this.rbDeliveryStaff.Location = new System.Drawing.Point(335, 253);
-            this.rbDeliveryStaff.Name = "rbDeliveryStaff";
-            this.rbDeliveryStaff.Size = new System.Drawing.Size(107, 20);
-            this.rbDeliveryStaff.TabIndex = 3;
-            this.rbDeliveryStaff.TabStop = true;
-            this.rbDeliveryStaff.Text = "Delivery Staff";
-            this.rbDeliveryStaff.UseVisualStyleBackColor = true;
+            this.btnDeliveryStaff.Location = new System.Drawing.Point(336, 274);
+            this.btnDeliveryStaff.Name = "btnDeliveryStaff";
+            this.btnDeliveryStaff.Size = new System.Drawing.Size(141, 42);
+            this.btnDeliveryStaff.TabIndex = 8;
+            this.btnDeliveryStaff.Text = "Delivery Staff";
+            this.btnDeliveryStaff.UseVisualStyleBackColor = true;
             // 
-            // rbRestaurant
+            // btnRestaurant
             // 
-            this.rbRestaurant.AutoSize = true;
-            this.rbRestaurant.Location = new System.Drawing.Point(335, 291);
-            this.rbRestaurant.Name = "rbRestaurant";
-            this.rbRestaurant.Size = new System.Drawing.Size(93, 20);
-            this.rbRestaurant.TabIndex = 4;
-            this.rbRestaurant.TabStop = true;
-            this.rbRestaurant.Text = "Restaurant";
-            this.rbRestaurant.UseVisualStyleBackColor = true;
-            // 
-            // btnContinue
-            // 
-            this.btnContinue.BackColor = System.Drawing.SystemColors.Info;
-            this.btnContinue.Location = new System.Drawing.Point(336, 352);
-            this.btnContinue.Name = "btnContinue";
-            this.btnContinue.Size = new System.Drawing.Size(85, 39);
-            this.btnContinue.TabIndex = 5;
-            this.btnContinue.Text = "Continue";
-            this.btnContinue.UseVisualStyleBackColor = false;
+            this.btnRestaurant.Location = new System.Drawing.Point(336, 331);
+            this.btnRestaurant.Name = "btnRestaurant";
+            this.btnRestaurant.Size = new System.Drawing.Size(141, 38);
+            this.btnRestaurant.TabIndex = 9;
+            this.btnRestaurant.Text = "Restaurant";
+            this.btnRestaurant.UseVisualStyleBackColor = true;
             // 
             // Usertypeselectionform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnContinue);
-            this.Controls.Add(this.rbRestaurant);
-            this.Controls.Add(this.rbDeliveryStaff);
-            this.Controls.Add(this.rbCustomer);
-            this.Controls.Add(this.rbAdmin);
+            this.Controls.Add(this.btnRestaurant);
+            this.Controls.Add(this.btnDeliveryStaff);
+            this.Controls.Add(this.btnCustomer);
+            this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.lblUserTypePrompt);
             this.Name = "Usertypeselectionform";
             this.Text = "Usertypeselectionform";
@@ -121,10 +101,9 @@
         #endregion
 
         private System.Windows.Forms.Label lblUserTypePrompt;
-        private System.Windows.Forms.RadioButton rbAdmin;
-        private System.Windows.Forms.RadioButton rbCustomer;
-        private System.Windows.Forms.RadioButton rbDeliveryStaff;
-        private System.Windows.Forms.RadioButton rbRestaurant;
-        private System.Windows.Forms.Button btnContinue;
+        private System.Windows.Forms.Button btnAdmin;
+        private System.Windows.Forms.Button btnCustomer;
+        private System.Windows.Forms.Button btnDeliveryStaff;
+        private System.Windows.Forms.Button btnRestaurant;
     }
 }
