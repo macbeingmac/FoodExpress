@@ -19,31 +19,31 @@ namespace FoodDeliverySystem.views
 
         private void btnManageRestaurants_Click(object sender, EventArgs e)
         {
-            Managerestaurantform form = new Managerestaurantsform();
+            Managerestaurantsform form = new Managerestaurantsform();
             form.ShowDialog(); // Open restaurant management
         }
 
         private void btnManageMenu_Click(object sender, EventArgs e)
         {
-            Menumanagementform1 form = new Menumanagementform1();
+            Menumanagementform form = new Menumanagementform();
             form.ShowDialog(); // Open menu management
         }
 
         private void btnManageOrders_Click(object sender, EventArgs e)
         {
-            Ordermanagementform form = new Ordermanagementform();
+            Manageorders form = new Manageorders();
             form.ShowDialog(); // (Create this form if needed)
         }
 
         private void btnManageDeliveries_Click(object sender, EventArgs e)
         {
-            Deliverymanagementform form = new Deliverymanagementform();
+            Managedeliveries form = new Managedeliveries();
             form.ShowDialog();
         }
 
         private void btnManageReviews_Click(object sender, EventArgs e)
         {
-            Reviewlistform form = new Reviewlistform(); // (Create if needed)
+            Managereviews form = new Managereviews(); // (Create if needed)
             form.ShowDialog();
         }
 
