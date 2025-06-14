@@ -35,7 +35,7 @@ namespace FoodDeliverySystem.views
                 return;
             }
 
-            string[] userTypes = { "admin", "customer", "restaurant", "deliverystaff" };
+            string[] userTypes = { "admin", "customer", "restaurant", "delivery_staff" };
             bool loginSuccess = false;
             string userType = "";
 
@@ -71,7 +71,7 @@ namespace FoodDeliverySystem.views
                             dashboard = new Restaurantdashboardform(restaurant);
                         break;
 
-                    case "deliverystaff":
+                    case "delivery_staff":
                         DeliveryStaff staff = GetDeliveryStaffFromDB(username, password);
                         if (staff != null)
                             dashboard = new Deliverystaffdashboardform(staff);
@@ -167,7 +167,7 @@ namespace FoodDeliverySystem.views
 
         private DeliveryStaff GetDeliveryStaffFromDB(string username, string password)
         {
-            string query = "SELECT * FROM deliverystaff WHERE name = @name AND password = @password";
+            string query = "SELECT * FROM delivery_staff WHERE name = @name AND password = @password";
 
             using (MySqlConnection conn = DbConnection.GetConnection())
             {
@@ -199,5 +199,41 @@ namespace FoodDeliverySystem.views
 
             return null;
         }
+
+        private Restaurant GetRestaurantFromDB(string username, string password)
+        {
+            string query = "SELECT * FROM restaurant WHERE name = @name AND password = @password";
+
+            using (MySqlConnection conn = DbConnection.GetConnection())
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@name", username);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            int id = Convert.ToInt32(reader["id"]);
+                            string name = reader["name"].ToString();
+                            string pass = reader["password"].ToString();
+                            string address = reader["address"].ToString();
+
+                            return new Restaurant(id, name, pass, address);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error fetching restaurant: " + ex.Message);
+                }
+            }
+
+            return null;
+        }
+
     }
 }

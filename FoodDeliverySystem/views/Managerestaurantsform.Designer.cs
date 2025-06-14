@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblmanagerestaurant = new System.Windows.Forms.Label();
             this.lblAddaRestaurant = new System.Windows.Forms.Label();
             this.dgvgrid = new System.Windows.Forms.DataGridView();
@@ -59,7 +57,7 @@
             this.lblmanagerestaurant.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmanagerestaurant.Location = new System.Drawing.Point(286, 45);
             this.lblmanagerestaurant.Name = "lblmanagerestaurant";
-            this.lblmanagerestaurant.Size = new System.Drawing.Size(309, 40);
+            this.lblmanagerestaurant.Size = new System.Drawing.Size(253, 31);
             this.lblmanagerestaurant.TabIndex = 0;
             this.lblmanagerestaurant.Text = "Manage Restaurant";
             // 
@@ -69,30 +67,14 @@
             this.lblAddaRestaurant.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddaRestaurant.Location = new System.Drawing.Point(343, 327);
             this.lblAddaRestaurant.Name = "lblAddaRestaurant";
-            this.lblAddaRestaurant.Size = new System.Drawing.Size(158, 24);
+            this.lblAddaRestaurant.Size = new System.Drawing.Size(131, 19);
             this.lblAddaRestaurant.TabIndex = 1;
             this.lblAddaRestaurant.Text = "Add a Restaurant";
             this.lblAddaRestaurant.Click += new System.EventHandler(this.lblAddaRestaurant_Click);
             // 
             // dgvgrid
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvgrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvgrid.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvgrid.Location = new System.Drawing.Point(156, 108);
             this.dgvgrid.Name = "dgvgrid";
             this.dgvgrid.RowHeadersWidth = 51;
@@ -106,7 +88,7 @@
             this.lblAddress.Location = new System.Drawing.Point(204, 438);
             this.lblAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(58, 16);
+            this.lblAddress.Size = new System.Drawing.Size(45, 13);
             this.lblAddress.TabIndex = 4;
             this.lblAddress.Text = "Address";
             // 
@@ -116,7 +98,7 @@
             this.lblRestaurantName.Location = new System.Drawing.Point(150, 390);
             this.lblRestaurantName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRestaurantName.Name = "lblRestaurantName";
-            this.lblRestaurantName.Size = new System.Drawing.Size(112, 16);
+            this.lblRestaurantName.Size = new System.Drawing.Size(90, 13);
             this.lblRestaurantName.TabIndex = 5;
             this.lblRestaurantName.Text = "Restaurant Name";
             // 
@@ -124,14 +106,14 @@
             // 
             this.txtRestaurantName.Location = new System.Drawing.Point(267, 384);
             this.txtRestaurantName.Name = "txtRestaurantName";
-            this.txtRestaurantName.Size = new System.Drawing.Size(289, 22);
+            this.txtRestaurantName.Size = new System.Drawing.Size(289, 19);
             this.txtRestaurantName.TabIndex = 6;
             // 
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(268, 432);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(289, 22);
+            this.txtAddress.Size = new System.Drawing.Size(289, 19);
             this.txtAddress.TabIndex = 7;
             // 
             // btnAdd
@@ -142,6 +124,7 @@
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnupdate
             // 
@@ -156,14 +139,14 @@
             // 
             this.txtaddress1.Location = new System.Drawing.Point(268, 670);
             this.txtaddress1.Name = "txtaddress1";
-            this.txtaddress1.Size = new System.Drawing.Size(289, 22);
+            this.txtaddress1.Size = new System.Drawing.Size(289, 19);
             this.txtaddress1.TabIndex = 13;
             // 
             // txtname
             // 
             this.txtname.Location = new System.Drawing.Point(267, 622);
             this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(289, 22);
+            this.txtname.Size = new System.Drawing.Size(289, 19);
             this.txtname.TabIndex = 12;
             // 
             // lblname
@@ -172,7 +155,7 @@
             this.lblname.Location = new System.Drawing.Point(218, 628);
             this.lblname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(44, 16);
+            this.lblname.Size = new System.Drawing.Size(35, 13);
             this.lblname.TabIndex = 11;
             this.lblname.Text = "Name";
             // 
@@ -182,7 +165,7 @@
             this.lbladdress1.Location = new System.Drawing.Point(204, 673);
             this.lbladdress1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbladdress1.Name = "lbladdress1";
-            this.lbladdress1.Size = new System.Drawing.Size(58, 16);
+            this.lbladdress1.Size = new System.Drawing.Size(45, 13);
             this.lbladdress1.TabIndex = 10;
             this.lbladdress1.Text = "Address";
             // 
@@ -192,7 +175,7 @@
             this.lblupdaterestaurent.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblupdaterestaurent.Location = new System.Drawing.Point(343, 565);
             this.lblupdaterestaurent.Name = "lblupdaterestaurent";
-            this.lblupdaterestaurent.Size = new System.Drawing.Size(170, 24);
+            this.lblupdaterestaurent.Size = new System.Drawing.Size(141, 19);
             this.lblupdaterestaurent.TabIndex = 9;
             this.lblupdaterestaurent.Text = "Update Restaurant";
             // 
@@ -209,7 +192,7 @@
             // 
             this.txtid.Location = new System.Drawing.Point(277, 899);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(289, 22);
+            this.txtid.Size = new System.Drawing.Size(289, 19);
             this.txtid.TabIndex = 18;
             // 
             // lblid
@@ -218,7 +201,7 @@
             this.lblid.Location = new System.Drawing.Point(242, 905);
             this.lblid.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblid.Name = "lblid";
-            this.lblid.Size = new System.Drawing.Size(20, 16);
+            this.lblid.Size = new System.Drawing.Size(18, 13);
             this.lblid.TabIndex = 17;
             this.lblid.Text = "ID";
             // 
@@ -228,7 +211,7 @@
             this.lbldelete.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldelete.Location = new System.Drawing.Point(343, 843);
             this.lbldelete.Name = "lbldelete";
-            this.lbldelete.Size = new System.Drawing.Size(178, 24);
+            this.lbldelete.Size = new System.Drawing.Size(147, 19);
             this.lbldelete.TabIndex = 15;
             this.lbldelete.Text = "Delete a Restaurant";
             // 
@@ -236,7 +219,7 @@
             // 
             this.txtid1.Location = new System.Drawing.Point(267, 718);
             this.txtid1.Name = "txtid1";
-            this.txtid1.Size = new System.Drawing.Size(289, 22);
+            this.txtid1.Size = new System.Drawing.Size(289, 19);
             this.txtid1.TabIndex = 22;
             // 
             // lblid1
@@ -245,15 +228,15 @@
             this.lblid1.Location = new System.Drawing.Point(242, 724);
             this.lblid1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblid1.Name = "lblid1";
-            this.lblid1.Size = new System.Drawing.Size(20, 16);
+            this.lblid1.Size = new System.Drawing.Size(18, 13);
             this.lblid1.TabIndex = 21;
             this.lblid1.Text = "ID";
             // 
             // Managerestaurantsform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 1028);
+            this.ClientSize = new System.Drawing.Size(800, 749);
             this.Controls.Add(this.txtid1);
             this.Controls.Add(this.lblid1);
             this.Controls.Add(this.btndelete);
