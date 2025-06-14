@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FoodDeliverySystem.views
 {
-    public partial class Managemenuitems: Form
+    public partial class Managemenuitemsform1: Form
     {
-        public Managemenuitems()
+        public Managemenuitemsform1()
         {
             InitializeComponent();
         }
