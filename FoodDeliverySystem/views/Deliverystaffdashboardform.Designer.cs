@@ -38,48 +38,55 @@
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(354, 65);
+            this.lblWelcome.Location = new System.Drawing.Point(266, 53);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(157, 40);
+            this.lblWelcome.Size = new System.Drawing.Size(127, 31);
             this.lblWelcome.TabIndex = 0;
             this.lblWelcome.Text = "Welcome";
             // 
             // btnViewAssignedDeliveries
             // 
-            this.btnViewAssignedDeliveries.Location = new System.Drawing.Point(348, 140);
+            this.btnViewAssignedDeliveries.Location = new System.Drawing.Point(261, 114);
+            this.btnViewAssignedDeliveries.Margin = new System.Windows.Forms.Padding(2);
             this.btnViewAssignedDeliveries.Name = "btnViewAssignedDeliveries";
-            this.btnViewAssignedDeliveries.Size = new System.Drawing.Size(184, 23);
+            this.btnViewAssignedDeliveries.Size = new System.Drawing.Size(138, 19);
             this.btnViewAssignedDeliveries.TabIndex = 1;
             this.btnViewAssignedDeliveries.Text = "View Assigned Deliveries";
             this.btnViewAssignedDeliveries.UseVisualStyleBackColor = true;
+            this.btnViewAssignedDeliveries.Click += new System.EventHandler(this.btnViewAssignedDeliveries_Click);
             // 
             // btnUpdateDeliveryStatus
             // 
-            this.btnUpdateDeliveryStatus.Location = new System.Drawing.Point(348, 207);
+            this.btnUpdateDeliveryStatus.Location = new System.Drawing.Point(261, 168);
+            this.btnUpdateDeliveryStatus.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdateDeliveryStatus.Name = "btnUpdateDeliveryStatus";
-            this.btnUpdateDeliveryStatus.Size = new System.Drawing.Size(184, 23);
+            this.btnUpdateDeliveryStatus.Size = new System.Drawing.Size(138, 19);
             this.btnUpdateDeliveryStatus.TabIndex = 2;
             this.btnUpdateDeliveryStatus.Text = "Update Delivery Status";
             this.btnUpdateDeliveryStatus.UseVisualStyleBackColor = true;
+            this.btnUpdateDeliveryStatus.Click += new System.EventHandler(this.btnUpdateDeliveryStatus_Click_1);
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(348, 275);
+            this.btnLogout.Location = new System.Drawing.Point(261, 223);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(184, 23);
+            this.btnLogout.Size = new System.Drawing.Size(138, 19);
             this.btnLogout.TabIndex = 3;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
             // Deliverystaffdashboardform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnUpdateDeliveryStatus);
             this.Controls.Add(this.btnViewAssignedDeliveries);
             this.Controls.Add(this.lblWelcome);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Deliverystaffdashboardform";
             this.Text = "Deliverystaffdashboardform";
             this.ResumeLayout(false);
