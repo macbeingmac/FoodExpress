@@ -33,16 +33,17 @@ namespace FoodDeliverySystem.views
 
         private void btnDeliveryStaff_Click(object sender, EventArgs e)
         {
-            Restaurantregisterform restForm = new Restaurantregisterform();
-            restForm.Show();
+            Deliveryregisterform staffForm = new Deliveryregisterform();
+            staffForm.Show();
             this.Hide();
 
         }
 
         private void btnRestaurant_Click(object sender, EventArgs e)
         {
-            Deliveryregisterform staffForm = new Deliveryregisterform();
-            staffForm.Show();
+            
+            Restaurantregisterform restForm = new Restaurantregisterform();
+            restForm.Show();
             this.Hide();
         }
     }

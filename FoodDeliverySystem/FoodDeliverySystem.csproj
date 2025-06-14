@@ -157,17 +157,17 @@
     <Compile Include="views\Loginform.Designer.cs">
       <DependentUpon>Loginform.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\Managemenuitems.cs">
+    <Compile Include="views\Managemenuitemsform1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\Managemenuitems.Designer.cs">
-      <DependentUpon>Managemenuitems.cs</DependentUpon>
+    <Compile Include="views\Managemenuitemsform1.Designer.cs">
+      <DependentUpon>Managemenuitemsform1.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\Managerestaurants.cs">
+    <Compile Include="views\Managerestaurantsform.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\Managerestaurants.Designer.cs">
-      <DependentUpon>Managerestaurants.cs</DependentUpon>
+    <Compile Include="views\Managerestaurantsform.Designer.cs">
+      <DependentUpon>Managerestaurantsform.cs</DependentUpon>
     </Compile>
     <Compile Include="views\Restaurantdashboardform.cs">
       <SubType>Form</SubType>
@@ -222,6 +222,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\Loginform.resx">
       <DependentUpon>Loginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Managemenuitemsform1.resx">
+      <DependentUpon>Managemenuitemsform1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Managerestaurantsform.resx">
+      <DependentUpon>Managerestaurantsform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\Restaurantdashboardform.resx">
       <DependentUpon>Restaurantdashboardform.cs</DependentUpon>
