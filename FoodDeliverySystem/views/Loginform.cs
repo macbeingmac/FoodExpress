@@ -51,32 +51,30 @@ namespace FoodDeliverySystem.views
             if (loginSuccess)
             {
                 MessageBox.Show($"Login successful as {userType}!");
-
                 Form dashboard = null;
 
                 switch (userType)
                 {
                     case "admin":
-                        dashboard = new Admindashboardform(); break;
+                        dashboard = new Admindashboardform();
+                        break;
+
                     case "customer":
-                        {
-                            Customer customer = GetCustomerFromDB(username, password);
-                            if (customer != null)
-                            {
-                                dashboard = new Customerdashboardform(customer);
-                            }
-                            break;
-                        }
+                        Customer customer = GetCustomerFromDB(username, password);
+                        if (customer != null)
+                            dashboard = new Customerdashboardform(customer);
+                        break;
 
                     case "restaurant":
-                        dashboard = new Restaurantdashboardform(); break;
+                        Restaurant restaurant = GetRestaurantFromDB(username, password);
+                        if (restaurant != null)
+                            dashboard = new Restaurantdashboardform(restaurant);
+                        break;
+
                     case "deliverystaff":
                         DeliveryStaff staff = GetDeliveryStaffFromDB(username, password);
                         if (staff != null)
-                        {
                             dashboard = new Deliverystaffdashboardform(staff);
-                        }
-
                         break;
                 }
 
@@ -85,6 +83,10 @@ namespace FoodDeliverySystem.views
                     this.Hide();
                     dashboard.ShowDialog();
                     this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Login failed: Unable to load dashboard.");
                 }
             }
             else
@@ -125,7 +127,6 @@ namespace FoodDeliverySystem.views
 
             return false;
         }
-
 
         private Customer GetCustomerFromDB(string username, string password)
         {
@@ -198,7 +199,5 @@ namespace FoodDeliverySystem.views
 
             return null;
         }
-
-
     }
 }
