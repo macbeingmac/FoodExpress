@@ -8,23 +8,10 @@ namespace FoodDeliverySystem.modules
 {
     class Admin : Person
     {
-        private string password;
-
         // Constructor
-        public Admin(int id, string name, string password): base(id, name)
+        public Admin(int id, string name, string password): base(id, name, password)
         {
-            this.password = password;
         }
 
-        // Getter and Setter for Password
-        public string GetPassword()
-        {
-            return password;
-        }
-
-        public void SetPassword(string value)
-        {
-            password = value;
-        }
     }
 }

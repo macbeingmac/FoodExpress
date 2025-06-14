@@ -10,12 +10,14 @@ namespace FoodDeliverySystem.modules
     {
         private int id;
         private string name;
+        private string password;
 
         // Constructor
-        public Person(int id, string name)
+        public Person(int id, string name, string password)
         {
             this.id = id;
             this.name = name;
+            this.password = password;
         }
 
         // Getter and Setter for ID
@@ -38,6 +40,17 @@ namespace FoodDeliverySystem.modules
         public void SetName(string value)
         {
             name = value;
+        }
+
+        // Getter and Setter for Password
+        public string GetPassword()
+        {
+            return password;
+        }
+
+        public void SetPassword(string value)
+        {
+            password = value;
         }
     }
 }
