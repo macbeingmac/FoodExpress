@@ -29,26 +29,22 @@ namespace FoodDeliverySystem.views
 
         private void btnViewMenu_Click(object sender, EventArgs e)
         {
-            Viewmenu = new Viewmenu();
+            Viewmenu form = new Viewmenu();
             form.ShowDialog();
         }
 
         private void btnPlaceOrder_Click(object sender, EventArgs e)
         {
-            Placeorder form = new Placeorder(loggedInCustomer);
-            form.ShowDialog();
+          
         }
 
         private void btnViewOrders_Click(object sender, EventArgs e)
         {
-            Viewmyorder form = new Viewmyorder(loggedInCustomer);
-            form.ShowDialog();
+            
         }
 
         private void btnLeaveaReview_Click(object sender, EventArgs e)
         {
-            Leaveareview form = new Leaveareview(loggedInCustomer);
-            form.ShowDialog();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
