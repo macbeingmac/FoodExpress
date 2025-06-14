@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FoodDeliverySystem.modules;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,17 @@ namespace FoodDeliverySystem.views
 {
     public partial class Updatedeliverystatus: Form
     {
-        public Updatedeliverystatus()
+        private DeliveryStaff staff;
+
+        public Updatedeliverystatus(DeliveryStaff staff)
         {
             InitializeComponent();
+            this.staff = staff;
+        }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

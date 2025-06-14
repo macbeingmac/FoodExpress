@@ -38,44 +38,48 @@
             // 
             // btnupdate
             // 
-            this.btnupdate.Location = new System.Drawing.Point(388, 278);
+            this.btnupdate.Location = new System.Drawing.Point(291, 226);
+            this.btnupdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(91, 41);
+            this.btnupdate.Size = new System.Drawing.Size(68, 33);
             this.btnupdate.TabIndex = 22;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // txtstatus
             // 
-            this.txtstatus.Location = new System.Drawing.Point(287, 236);
+            this.txtstatus.Location = new System.Drawing.Point(215, 192);
+            this.txtstatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtstatus.Name = "txtstatus";
-            this.txtstatus.Size = new System.Drawing.Size(289, 22);
+            this.txtstatus.Size = new System.Drawing.Size(218, 20);
             this.txtstatus.TabIndex = 21;
             // 
             // txtdeliveryid
             // 
-            this.txtdeliveryid.Location = new System.Drawing.Point(286, 188);
+            this.txtdeliveryid.Location = new System.Drawing.Point(214, 153);
+            this.txtdeliveryid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtdeliveryid.Name = "txtdeliveryid";
-            this.txtdeliveryid.Size = new System.Drawing.Size(289, 22);
+            this.txtdeliveryid.Size = new System.Drawing.Size(218, 20);
             this.txtdeliveryid.TabIndex = 20;
             // 
             // lbldeliveryid
             // 
             this.lbldeliveryid.AutoSize = true;
-            this.lbldeliveryid.Location = new System.Drawing.Point(208, 194);
+            this.lbldeliveryid.Location = new System.Drawing.Point(156, 158);
             this.lbldeliveryid.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbldeliveryid.Name = "lbldeliveryid";
-            this.lbldeliveryid.Size = new System.Drawing.Size(73, 16);
+            this.lbldeliveryid.Size = new System.Drawing.Size(59, 13);
             this.lbldeliveryid.TabIndex = 19;
             this.lbldeliveryid.Text = "Delivery ID";
             // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(237, 242);
+            this.lblStatus.Location = new System.Drawing.Point(178, 197);
             this.lblStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(44, 16);
+            this.lblStatus.Size = new System.Drawing.Size(37, 13);
             this.lblStatus.TabIndex = 18;
             this.lblStatus.Text = "Status";
             // 
@@ -83,23 +87,25 @@
             // 
             this.lblUpdateDeliveryStatus.AutoSize = true;
             this.lblUpdateDeliveryStatus.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUpdateDeliveryStatus.Location = new System.Drawing.Point(362, 131);
+            this.lblUpdateDeliveryStatus.Location = new System.Drawing.Point(272, 106);
+            this.lblUpdateDeliveryStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUpdateDeliveryStatus.Name = "lblUpdateDeliveryStatus";
-            this.lblUpdateDeliveryStatus.Size = new System.Drawing.Size(205, 24);
+            this.lblUpdateDeliveryStatus.Size = new System.Drawing.Size(169, 19);
             this.lblUpdateDeliveryStatus.TabIndex = 17;
             this.lblUpdateDeliveryStatus.Text = "Update Delivery Status";
             // 
             // Updatedeliverystatus
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.txtstatus);
             this.Controls.Add(this.txtdeliveryid);
             this.Controls.Add(this.lbldeliveryid);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.lblUpdateDeliveryStatus);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Updatedeliverystatus";
             this.Text = "Updatedeliverystatus";
             this.ResumeLayout(false);
