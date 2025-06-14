@@ -26,18 +26,29 @@ namespace FoodDeliverySystem.views
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text;
 
-            if (username == "" || password == "")
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Please enter both username and password.");
                 return;
             }
 
-            // Check each user table
-            if (TryLogin("admin", username, password, out string userType))
+            string[] userTypes = { "admin", "customer", "restaurant", "deliverystaff" };
+            bool loginSuccess = false;
+            string userType = "";
+
+            foreach (var type in userTypes)
+            {
+                if (TryLogin(type, username, password, out userType))
+                {
+                    loginSuccess = true;
+                    break;
+                }
+            }
+
+            if (loginSuccess)
             {
                 MessageBox.Show($"Login successful as {userType}!");
 
-                // Open the correct dashboard form
                 Form dashboard = null;
 
                 switch (userType)
@@ -58,7 +69,6 @@ namespace FoodDeliverySystem.views
                     dashboard.ShowDialog();
                     this.Close();
                 }
-
             }
             else
             {
@@ -69,7 +79,6 @@ namespace FoodDeliverySystem.views
         private bool TryLogin(string userType, string username, string password, out string matchedType)
         {
             matchedType = "";
-
             string table = userType.ToLower();
             string query = $"SELECT * FROM {table} WHERE name = @name AND password = @password";
 
