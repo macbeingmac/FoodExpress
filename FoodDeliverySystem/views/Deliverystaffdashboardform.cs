@@ -13,9 +13,12 @@ namespace FoodDeliverySystem.views
 {
     public partial class Deliverystaffdashboardform: Form
     {
-        public Deliverystaffdashboardform()
+        private DeliveryStaff loggedInStaff;
+
+        public Deliverystaffdashboardform(DeliveryStaff staff)
         {
             InitializeComponent();
+            loggedInStaff = staff;
         }
 
         private void btnViewAssignedDeliveries_Click(object sender, EventArgs e)
