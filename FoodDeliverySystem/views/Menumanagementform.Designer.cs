@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.txtid1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblId1 = new System.Windows.Forms.Label();
             this.btndelete = new System.Windows.Forms.Button();
             this.txtid = new System.Windows.Forms.TextBox();
             this.lblid = new System.Windows.Forms.Label();
@@ -58,15 +58,15 @@
             this.txtid1.Size = new System.Drawing.Size(289, 22);
             this.txtid1.TabIndex = 42;
             // 
-            // label1
+            // lblId1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(226, 734);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 16);
-            this.label1.TabIndex = 41;
-            this.label1.Text = "ID";
+            this.lblId1.AutoSize = true;
+            this.lblId1.Location = new System.Drawing.Point(226, 734);
+            this.lblId1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblId1.Name = "lblId1";
+            this.lblId1.Size = new System.Drawing.Size(20, 16);
+            this.lblId1.TabIndex = 41;
+            this.lblId1.Text = "ID";
             // 
             // btndelete
             // 
@@ -236,7 +236,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 1055);
             this.Controls.Add(this.txtid1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblId1);
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.lblid);
@@ -266,7 +266,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtid1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblId1;
         private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Label lblid;

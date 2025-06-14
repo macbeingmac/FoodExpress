@@ -301,6 +301,9 @@
     <EmbeddedResource Include="views\Deliverystaffdashboardform.resx">
       <DependentUpon>Deliverystaffdashboardform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\Leaveareview.resx">
+      <DependentUpon>Leaveareview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Loginform.resx">
       <DependentUpon>Loginform.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +322,9 @@
     <EmbeddedResource Include="views\Menumanagementform.resx">
       <DependentUpon>Menumanagementform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\Placeorder.resx">
+      <DependentUpon>Placeorder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Restaurantdashboardform.resx">
       <DependentUpon>Restaurantdashboardform.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,11 +334,29 @@
     <EmbeddedResource Include="views\Startform.resx">
       <DependentUpon>Startform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\Updatedeliverystatus.resx">
+      <DependentUpon>Updatedeliverystatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Updatedetails.resx">
+      <DependentUpon>Updatedetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Usertypeselectionform.resx">
       <DependentUpon>Usertypeselectionform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\Viewassigneddeliveries.resx">
+      <DependentUpon>Viewassigneddeliveries.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Viewmenu.resx">
       <DependentUpon>Viewmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Viewmyorder.resx">
+      <DependentUpon>Viewmyorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Vieworders.resx">
+      <DependentUpon>Vieworders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Viewreviews.resx">
+      <DependentUpon>Viewreviews.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

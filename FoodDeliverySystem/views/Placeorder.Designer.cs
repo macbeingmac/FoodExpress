@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnplaceorder = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnplaceorder
+            // 
+            this.btnplaceorder.Location = new System.Drawing.Point(326, 199);
+            this.btnplaceorder.Name = "btnplaceorder";
+            this.btnplaceorder.Size = new System.Drawing.Size(145, 42);
+            this.btnplaceorder.TabIndex = 0;
+            this.btnplaceorder.Text = "Place Order";
+            this.btnplaceorder.UseVisualStyleBackColor = true;
+            // 
+            // Placeorder
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnplaceorder);
+            this.Name = "Placeorder";
             this.Text = "Placeorder";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnplaceorder;
     }
 }
