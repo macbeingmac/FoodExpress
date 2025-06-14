@@ -16,5 +16,10 @@ namespace FoodDeliverySystem.views
         {
             InitializeComponent();
         }
+
+        private void btnBrowseRestaurants_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

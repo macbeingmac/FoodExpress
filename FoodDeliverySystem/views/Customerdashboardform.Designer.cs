@@ -41,71 +41,79 @@
             // 
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(311, 33);
+            this.lblWelcome.Location = new System.Drawing.Point(233, 27);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(157, 40);
+            this.lblWelcome.Size = new System.Drawing.Size(127, 31);
             this.lblWelcome.TabIndex = 0;
             this.lblWelcome.Text = "Welcome";
             // 
             // btnBrowseRestaurants
             // 
-            this.btnBrowseRestaurants.Location = new System.Drawing.Point(316, 92);
+            this.btnBrowseRestaurants.Location = new System.Drawing.Point(237, 75);
+            this.btnBrowseRestaurants.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBrowseRestaurants.Name = "btnBrowseRestaurants";
-            this.btnBrowseRestaurants.Size = new System.Drawing.Size(152, 23);
+            this.btnBrowseRestaurants.Size = new System.Drawing.Size(114, 19);
             this.btnBrowseRestaurants.TabIndex = 1;
             this.btnBrowseRestaurants.Text = "Browse Restaurants";
             this.btnBrowseRestaurants.UseVisualStyleBackColor = true;
+            this.btnBrowseRestaurants.Click += new System.EventHandler(this.btnBrowseRestaurants_Click);
             // 
             // btnViewMenu
             // 
-            this.btnViewMenu.Location = new System.Drawing.Point(316, 137);
+            this.btnViewMenu.Location = new System.Drawing.Point(237, 111);
+            this.btnViewMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnViewMenu.Name = "btnViewMenu";
-            this.btnViewMenu.Size = new System.Drawing.Size(152, 23);
+            this.btnViewMenu.Size = new System.Drawing.Size(114, 19);
             this.btnViewMenu.TabIndex = 2;
             this.btnViewMenu.Text = "View Menu";
             this.btnViewMenu.UseVisualStyleBackColor = true;
             // 
             // btnPlaceOrder
             // 
-            this.btnPlaceOrder.Location = new System.Drawing.Point(316, 184);
+            this.btnPlaceOrder.Location = new System.Drawing.Point(237, 150);
+            this.btnPlaceOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPlaceOrder.Name = "btnPlaceOrder";
-            this.btnPlaceOrder.Size = new System.Drawing.Size(152, 23);
+            this.btnPlaceOrder.Size = new System.Drawing.Size(114, 19);
             this.btnPlaceOrder.TabIndex = 3;
             this.btnPlaceOrder.Text = "Place Order";
             this.btnPlaceOrder.UseVisualStyleBackColor = true;
             // 
             // btnViewOrders
             // 
-            this.btnViewOrders.Location = new System.Drawing.Point(316, 233);
+            this.btnViewOrders.Location = new System.Drawing.Point(237, 189);
+            this.btnViewOrders.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnViewOrders.Name = "btnViewOrders";
-            this.btnViewOrders.Size = new System.Drawing.Size(152, 23);
+            this.btnViewOrders.Size = new System.Drawing.Size(114, 19);
             this.btnViewOrders.TabIndex = 4;
             this.btnViewOrders.Text = "View Orders";
             this.btnViewOrders.UseVisualStyleBackColor = true;
             // 
             // btnLeaveaReview
             // 
-            this.btnLeaveaReview.Location = new System.Drawing.Point(318, 282);
+            this.btnLeaveaReview.Location = new System.Drawing.Point(238, 229);
+            this.btnLeaveaReview.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLeaveaReview.Name = "btnLeaveaReview";
-            this.btnLeaveaReview.Size = new System.Drawing.Size(152, 23);
+            this.btnLeaveaReview.Size = new System.Drawing.Size(114, 19);
             this.btnLeaveaReview.TabIndex = 5;
             this.btnLeaveaReview.Text = "Leave a Review";
             this.btnLeaveaReview.UseVisualStyleBackColor = true;
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(316, 331);
+            this.btnLogout.Location = new System.Drawing.Point(237, 269);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(152, 23);
+            this.btnLogout.Size = new System.Drawing.Size(114, 19);
             this.btnLogout.TabIndex = 6;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
             // 
             // Customerdashboardform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnLeaveaReview);
             this.Controls.Add(this.btnViewOrders);
@@ -113,6 +121,7 @@
             this.Controls.Add(this.btnViewMenu);
             this.Controls.Add(this.btnBrowseRestaurants);
             this.Controls.Add(this.lblWelcome);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Customerdashboardform";
             this.Text = "Customerdashboardform";
             this.ResumeLayout(false);
