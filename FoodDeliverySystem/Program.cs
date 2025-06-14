@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using FoodDeliverySystem.services;
 using FoodDeliverySystem.modules;
+using System.Windows.Forms;
+using FoodDeliverySystem.views;
+
 
 namespace FoodDeliverySystem
 {
@@ -19,7 +22,7 @@ namespace FoodDeliverySystem
             // Dummy menu items
             MenuItem item1 = new MenuItem(1, "Cheese Pizza", 1500.0, true);
             MenuItem item2 = new MenuItem(2, "Veg Pizza", 1300.0, true);
-            List<MenuItem> orderedItems = new List<MenuItem> { item1, item2s };
+            List<MenuItem> orderedItems = new List<MenuItem> { item1, item2 };
 
             // Create the OrderService
             OrderService orderService = new OrderService();

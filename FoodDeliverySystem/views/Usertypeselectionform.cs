@@ -16,5 +16,34 @@ namespace FoodDeliverySystem.views
         {
             InitializeComponent();
         }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            AdminRegisterForm adminForm = new AdminRegisterForm();
+            adminForm.Show();
+            this.Hide();
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            Customerregisterform custForm = new Customerregisterform();
+            custForm.Show();
+            this.Hide();
+        }
+
+        private void btnDeliveryStaff_Click(object sender, EventArgs e)
+        {
+            Restaurantregisterform restForm = new Restaurantregisterform();
+            restForm.Show();
+            this.Hide();
+
+        }
+
+        private void btnRestaurant_Click(object sender, EventArgs e)
+        {
+            Deliveryregisterform staffForm = new Deliveryregisterform();
+            staffForm.Show();
+            this.Hide();
+        }
     }
 }
