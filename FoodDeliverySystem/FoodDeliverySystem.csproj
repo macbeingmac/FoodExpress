@@ -74,6 +74,12 @@
     <Compile Include="views\AdminRegisterForm.Designer.cs">
       <DependentUpon>AdminRegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\Customerdashboardform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Customerdashboardform.Designer.cs">
+      <DependentUpon>Customerdashboardform.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Customerregisterform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,11 +92,35 @@
     <Compile Include="views\Deliveryregisterform.Designer.cs">
       <DependentUpon>Deliveryregisterform.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\Deliverystaffdashboardform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Deliverystaffdashboardform.Designer.cs">
+      <DependentUpon>Deliverystaffdashboardform.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Loginform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\Loginform.Designer.cs">
       <DependentUpon>Loginform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Managemenuitems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Managemenuitems.Designer.cs">
+      <DependentUpon>Managemenuitems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Managerestaurants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Managerestaurants.Designer.cs">
+      <DependentUpon>Managerestaurants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Restaurantdashboardform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Restaurantdashboardform.Designer.cs">
+      <DependentUpon>Restaurantdashboardform.cs</DependentUpon>
     </Compile>
     <Compile Include="views\Restaurantregisterform.cs">
       <SubType>Form</SubType>
@@ -124,14 +154,23 @@
     <EmbeddedResource Include="views\AdminRegisterForm.resx">
       <DependentUpon>AdminRegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\Customerdashboardform.resx">
+      <DependentUpon>Customerdashboardform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Customerregisterform.resx">
       <DependentUpon>Customerregisterform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\Deliveryregisterform.resx">
       <DependentUpon>Deliveryregisterform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\Deliverystaffdashboardform.resx">
+      <DependentUpon>Deliverystaffdashboardform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Loginform.resx">
       <DependentUpon>Loginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Restaurantdashboardform.resx">
+      <DependentUpon>Restaurantdashboardform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\Restaurantregisterform.resx">
       <DependentUpon>Restaurantregisterform.cs</DependentUpon>
