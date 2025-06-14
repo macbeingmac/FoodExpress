@@ -63,6 +63,11 @@ namespace FoodDeliverySystem.views
                 {
                     MessageBox.Show("Admin registered successfully!");
                     this.Close(); // Close the form after success
+
+                    this.Hide(); // Hide the current form
+                    Loginform loginForm = new Loginform(); // Create an instance of the login form
+                    loginForm.ShowDialog(); // Show the login form
+                    this.Close(); // Close the register form after login is closed
                 }
                 else
                 {
