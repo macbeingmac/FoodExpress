@@ -253,6 +253,12 @@
     <Compile Include="views\Viewmenu.Designer.cs">
       <DependentUpon>Viewmenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\Viewmyorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Viewmyorder.Designer.cs">
+      <DependentUpon>Viewmyorder.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Vieworders.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -280,6 +286,9 @@
     <EmbeddedResource Include="views\AdminRegisterForm.resx">
       <DependentUpon>AdminRegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\Browserestaurants.resx">
+      <DependentUpon>Browserestaurants.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Customerdashboardform.resx">
       <DependentUpon>Customerdashboardform.cs</DependentUpon>
     </EmbeddedResource>
@@ -295,8 +304,17 @@
     <EmbeddedResource Include="views\Loginform.resx">
       <DependentUpon>Loginform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\Managedeliveries.resx">
+      <DependentUpon>Managedeliveries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Manageorders.resx">
+      <DependentUpon>Manageorders.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Managerestaurantsform.resx">
       <DependentUpon>Managerestaurantsform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Managereviews.resx">
+      <DependentUpon>Managereviews.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\Menumanagementform.resx">
       <DependentUpon>Menumanagementform.cs</DependentUpon>
@@ -312,6 +330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\Usertypeselectionform.resx">
       <DependentUpon>Usertypeselectionform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Viewmenu.resx">
+      <DependentUpon>Viewmenu.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

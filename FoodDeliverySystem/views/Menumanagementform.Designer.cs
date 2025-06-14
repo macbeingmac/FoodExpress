@@ -98,7 +98,7 @@
             // 
             this.lbldeletemenu.AutoSize = true;
             this.lbldeletemenu.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldeletemenu.Location = new System.Drawing.Point(327, 853);
+            this.lbldeletemenu.Location = new System.Drawing.Point(315, 868);
             this.lbldeletemenu.Name = "lbldeletemenu";
             this.lbldeletemenu.Size = new System.Drawing.Size(179, 24);
             this.lbldeletemenu.TabIndex = 37;
