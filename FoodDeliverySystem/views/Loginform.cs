@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using FoodDeliverySystem.database;
 using FoodDeliverySystem.modules;
+using FoodDeliverySystem.views;
+using System.Xml.Linq;
 
 namespace FoodDeliverySystem.views
 {
@@ -69,7 +71,13 @@ namespace FoodDeliverySystem.views
                     case "restaurant":
                         dashboard = new Restaurantdashboardform(); break;
                     case "deliverystaff":
-                        dashboard = new Deliverystaffdashboardform(); break;
+                        DeliveryStaff staff = GetDeliveryStaffFromDB(username, password);
+                        if (staff != null)
+                        {
+                            dashboard = new Deliverystaffdashboardform(staff);
+                        }
+
+                        break;
                 }
 
                 if (dashboard != null)
@@ -154,6 +162,43 @@ namespace FoodDeliverySystem.views
 
             return null;
         }
+
+
+        private DeliveryStaff GetDeliveryStaffFromDB(string username, string password)
+        {
+            string query = "SELECT * FROM deliverystaff WHERE name = @name AND password = @password";
+
+            using (MySqlConnection conn = DbConnection.GetConnection())
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@name", username);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            int id = Convert.ToInt32(reader["id"]);
+                            string name = reader["name"].ToString();
+                            string pass = reader["password"].ToString();
+                            string vehicle = reader["vehicle"].ToString();
+
+                            return new DeliveryStaff(id, name, pass, vehicle);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error fetching delivery staff: " + ex.Message);
+                }
+            }
+
+            return null;
+        }
+
 
     }
 }

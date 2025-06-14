@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FoodDeliverySystem.modules
 {
-    class DeliveryStaff : Person
+    public class DeliveryStaff : Person
     {
         private string vehicle;
 
