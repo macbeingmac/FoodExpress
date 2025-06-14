@@ -85,7 +85,7 @@
             // 
             this.btnRegister.BackColor = System.Drawing.SystemColors.Info;
             this.btnRegister.Location = new System.Drawing.Point(277, 258);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(67, 31);
             this.btnRegister.TabIndex = 5;
@@ -96,15 +96,16 @@
             // txtRestaurantName
             // 
             this.txtRestaurantName.Location = new System.Drawing.Point(277, 101);
-            this.txtRestaurantName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRestaurantName.Margin = new System.Windows.Forms.Padding(2);
             this.txtRestaurantName.Name = "txtRestaurantName";
             this.txtRestaurantName.Size = new System.Drawing.Size(164, 20);
             this.txtRestaurantName.TabIndex = 6;
+            this.txtRestaurantName.TextChanged += new System.EventHandler(this.txtRestaurantName_TextChanged);
             // 
             // txtRestaurantAddress
             // 
             this.txtRestaurantAddress.Location = new System.Drawing.Point(277, 151);
-            this.txtRestaurantAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRestaurantAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtRestaurantAddress.Name = "txtRestaurantAddress";
             this.txtRestaurantAddress.Size = new System.Drawing.Size(164, 20);
             this.txtRestaurantAddress.TabIndex = 7;
@@ -112,7 +113,7 @@
             // txtCreatepassword
             // 
             this.txtCreatepassword.Location = new System.Drawing.Point(277, 202);
-            this.txtCreatepassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCreatepassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtCreatepassword.Name = "txtCreatepassword";
             this.txtCreatepassword.Size = new System.Drawing.Size(164, 20);
             this.txtCreatepassword.TabIndex = 8;
@@ -130,7 +131,7 @@
             this.Controls.Add(this.lblRestaurantAddress);
             this.Controls.Add(this.lblRestaurantName);
             this.Controls.Add(this.lblrestaurantregisterform);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Restaurantregisterform";
             this.Text = "Restaurantregisterform";
             this.ResumeLayout(false);

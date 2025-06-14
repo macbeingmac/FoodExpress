@@ -65,6 +65,11 @@ namespace FoodDeliverySystem.views
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void txtRestaurantName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     

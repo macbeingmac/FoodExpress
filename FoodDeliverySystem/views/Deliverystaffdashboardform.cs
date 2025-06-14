@@ -34,6 +34,5 @@ namespace FoodDeliverySystem.views
         {
             Updatedeliverystatus form = new Updatedeliverystatus(loggedInStaff);
             form.ShowDialog();
-        }
     }
 }
