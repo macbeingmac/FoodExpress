@@ -39,58 +39,68 @@
             // 
             this.lblUserTypePrompt.AutoSize = true;
             this.lblUserTypePrompt.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserTypePrompt.Location = new System.Drawing.Point(286, 83);
+            this.lblUserTypePrompt.Location = new System.Drawing.Point(214, 67);
+            this.lblUserTypePrompt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUserTypePrompt.Name = "lblUserTypePrompt";
-            this.lblUserTypePrompt.Size = new System.Drawing.Size(394, 37);
+            this.lblUserTypePrompt.Size = new System.Drawing.Size(313, 30);
             this.lblUserTypePrompt.TabIndex = 0;
             this.lblUserTypePrompt.Text = "Select user type to register";
             // 
             // btnAdmin
             // 
-            this.btnAdmin.Location = new System.Drawing.Point(336, 160);
+            this.btnAdmin.Location = new System.Drawing.Point(252, 130);
+            this.btnAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(141, 37);
+            this.btnAdmin.Size = new System.Drawing.Size(106, 30);
             this.btnAdmin.TabIndex = 6;
             this.btnAdmin.Text = "Admin";
             this.btnAdmin.UseVisualStyleBackColor = true;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // btnCustomer
             // 
-            this.btnCustomer.Location = new System.Drawing.Point(336, 216);
+            this.btnCustomer.Location = new System.Drawing.Point(252, 176);
+            this.btnCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCustomer.Name = "btnCustomer";
-            this.btnCustomer.Size = new System.Drawing.Size(141, 40);
+            this.btnCustomer.Size = new System.Drawing.Size(106, 32);
             this.btnCustomer.TabIndex = 7;
             this.btnCustomer.Text = "Customer";
             this.btnCustomer.UseVisualStyleBackColor = true;
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 
             // btnDeliveryStaff
             // 
-            this.btnDeliveryStaff.Location = new System.Drawing.Point(336, 274);
+            this.btnDeliveryStaff.Location = new System.Drawing.Point(252, 223);
+            this.btnDeliveryStaff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDeliveryStaff.Name = "btnDeliveryStaff";
-            this.btnDeliveryStaff.Size = new System.Drawing.Size(141, 42);
+            this.btnDeliveryStaff.Size = new System.Drawing.Size(106, 34);
             this.btnDeliveryStaff.TabIndex = 8;
             this.btnDeliveryStaff.Text = "Delivery Staff";
             this.btnDeliveryStaff.UseVisualStyleBackColor = true;
+            this.btnDeliveryStaff.Click += new System.EventHandler(this.btnDeliveryStaff_Click);
             // 
             // btnRestaurant
             // 
-            this.btnRestaurant.Location = new System.Drawing.Point(336, 331);
+            this.btnRestaurant.Location = new System.Drawing.Point(252, 269);
+            this.btnRestaurant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRestaurant.Name = "btnRestaurant";
-            this.btnRestaurant.Size = new System.Drawing.Size(141, 38);
+            this.btnRestaurant.Size = new System.Drawing.Size(106, 31);
             this.btnRestaurant.TabIndex = 9;
             this.btnRestaurant.Text = "Restaurant";
             this.btnRestaurant.UseVisualStyleBackColor = true;
+            this.btnRestaurant.Click += new System.EventHandler(this.btnRestaurant_Click);
             // 
             // Usertypeselectionform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnRestaurant);
             this.Controls.Add(this.btnDeliveryStaff);
             this.Controls.Add(this.btnCustomer);
             this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.lblUserTypePrompt);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Usertypeselectionform";
             this.Text = "Usertypeselectionform";
             this.ResumeLayout(false);

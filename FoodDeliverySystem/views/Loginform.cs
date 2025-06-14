@@ -45,11 +45,11 @@ namespace FoodDeliverySystem.views
                     case "admin":
                         dashboard = new Admindashboardform(); break;
                     case "customer":
-                        dashboard = new CustomerDashboardForm(); break;
+                        dashboard = new Customerdashboardform(); break;
                     case "restaurant":
-                        dashboard = new RestaurantDashboardForm(); break;
+                        dashboard = new Restaurantdashboardform(); break;
                     case "deliverystaff":
-                        dashboard = new DeliveryStaffDashboardForm(); break;
+                        dashboard = new Deliverystaffdashboardform(); break;
                 }
 
                 if (dashboard != null)
