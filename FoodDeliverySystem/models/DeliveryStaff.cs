@@ -11,8 +11,8 @@ namespace FoodDeliverySystem.modules
         private string vehicle;
 
         // Constructor
-        public DeliveryStaff(int id, string name, string vehicle)
-            : base(id, name)
+        public DeliveryStaff(int id, string name, string password, string vehicle)
+            : base(id, name, password)
         {
             this.vehicle = vehicle;
         }

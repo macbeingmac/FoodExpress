@@ -11,13 +11,15 @@ namespace FoodDeliverySystem.modules
         private int id;
         private string name;
         private string address;
+        private string password;
 
         // Constructor
-        public Restaurant(int id, string name, string address)
+        public Restaurant(int id, string name, string address, string password)
         {
             this.id = id;
             this.name = name;
             this.address = address;
+            this.password = password;
         }
 
         // ID Getter & Setter

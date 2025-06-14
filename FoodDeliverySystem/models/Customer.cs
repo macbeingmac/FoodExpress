@@ -12,7 +12,7 @@ namespace FoodDeliverySystem.modules
         private string phone;
 
         // Constructor
-        public Customer(int id, string name, string address, string phone) : base(id, name)
+        public Customer(int id, string name, string password, string address, string phone) : base(id, name, password)
         {
             this.address = address;
             this.phone = phone;
