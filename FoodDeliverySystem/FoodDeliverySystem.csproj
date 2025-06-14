@@ -304,6 +304,9 @@
     <EmbeddedResource Include="views\Managerestaurantsform.resx">
       <DependentUpon>Managerestaurantsform.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\Menumanagementform.resx">
+      <DependentUpon>Menumanagementform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Restaurantdashboardform.resx">
       <DependentUpon>Restaurantdashboardform.cs</DependentUpon>
     </EmbeddedResource>
