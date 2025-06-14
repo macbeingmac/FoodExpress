@@ -127,6 +127,12 @@
     <Compile Include="views\AdminRegisterForm.Designer.cs">
       <DependentUpon>AdminRegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\Browserestaurants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Browserestaurants.Designer.cs">
+      <DependentUpon>Browserestaurants.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Customerdashboardform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,11 +157,53 @@
     <Compile Include="views\Deliverystaffdashboardform.Designer.cs">
       <DependentUpon>Deliverystaffdashboardform.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\Leaveareview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Leaveareview.Designer.cs">
+      <DependentUpon>Leaveareview.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Loginform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\Loginform.Designer.cs">
       <DependentUpon>Loginform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Managedeliveries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Managedeliveries.Designer.cs">
+      <DependentUpon>Managedeliveries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Manageorders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Manageorders.Designer.cs">
+      <DependentUpon>Manageorders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Managerestaurantsform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Managerestaurantsform.Designer.cs">
+      <DependentUpon>Managerestaurantsform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Managereviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Managereviews.Designer.cs">
+      <DependentUpon>Managereviews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Menumanagementform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Menumanagementform.Designer.cs">
+      <DependentUpon>Menumanagementform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Placeorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Placeorder.Designer.cs">
+      <DependentUpon>Placeorder.cs</DependentUpon>
     </Compile>
     <Compile Include="views\Restaurantdashboardform.cs">
       <SubType>Form</SubType>
@@ -175,11 +223,47 @@
     <Compile Include="views\Startform.Designer.cs">
       <DependentUpon>Startform.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\Updatedeliverystatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Updatedeliverystatus.Designer.cs">
+      <DependentUpon>Updatedeliverystatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Updatedetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Updatedetails.Designer.cs">
+      <DependentUpon>Updatedetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Usertypeselectionform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\Usertypeselectionform.Designer.cs">
       <DependentUpon>Usertypeselectionform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Viewassigneddeliveries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Viewassigneddeliveries.Designer.cs">
+      <DependentUpon>Viewassigneddeliveries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Viewmyorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Viewmyorder.Designer.cs">
+      <DependentUpon>Viewmyorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Vieworders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Vieworders.Designer.cs">
+      <DependentUpon>Vieworders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\Viewreviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\Viewreviews.Designer.cs">
+      <DependentUpon>Viewreviews.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -210,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\Loginform.resx">
       <DependentUpon>Loginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Managerestaurantsform.resx">
+      <DependentUpon>Managerestaurantsform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\Restaurantdashboardform.resx">
       <DependentUpon>Restaurantdashboardform.cs</DependentUpon>

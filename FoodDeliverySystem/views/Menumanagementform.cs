@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace FoodDeliverySystem.views
 {
-    public partial class Managerestaurantsform: Form
+    public partial class Menumanagementform: Form
     {
-        public Managerestaurantsform()
+        public Menumanagementform()
         {
             InitializeComponent();
-        }
-
-        private void Managerestaurantsform_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblAddaRestaurant_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
