@@ -19,17 +19,17 @@ namespace FoodDeliverySystem.views
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Loginform loginForm = new Loginform(); // Note: Your class name is Loginform
+            Loginform loginForm = new Loginform(); 
             loginForm.Show();
             this.Hide();
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
+
+        private void btnRegister_Click_1(object sender, EventArgs e)
         {
-            Usertypeselectionform selectionForm = new Usertypeselectionform(); // Note: Your class name is Usertypeselectionform
+            Usertypeselectionform selectionForm = new Usertypeselectionform(); 
             selectionForm.Show();
             this.Hide();
         }
-
     }
 }
