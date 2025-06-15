@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnupdate = new System.Windows.Forms.Button();
             this.txtstatus = new System.Windows.Forms.TextBox();
             this.txtorderid = new System.Windows.Forms.TextBox();
@@ -47,80 +47,86 @@
             // 
             // btnupdate
             // 
-            this.btnupdate.Location = new System.Drawing.Point(342, 491);
+            this.btnupdate.Location = new System.Drawing.Point(256, 399);
+            this.btnupdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(91, 41);
+            this.btnupdate.Size = new System.Drawing.Size(68, 33);
             this.btnupdate.TabIndex = 16;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // txtstatus
             // 
-            this.txtstatus.Location = new System.Drawing.Point(241, 449);
+            this.txtstatus.Location = new System.Drawing.Point(181, 365);
+            this.txtstatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtstatus.Name = "txtstatus";
-            this.txtstatus.Size = new System.Drawing.Size(289, 22);
+            this.txtstatus.Size = new System.Drawing.Size(218, 20);
             this.txtstatus.TabIndex = 15;
             // 
             // txtorderid
             // 
-            this.txtorderid.Location = new System.Drawing.Point(240, 401);
+            this.txtorderid.Location = new System.Drawing.Point(180, 326);
+            this.txtorderid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtorderid.Name = "txtorderid";
-            this.txtorderid.Size = new System.Drawing.Size(289, 22);
+            this.txtorderid.Size = new System.Drawing.Size(218, 20);
             this.txtorderid.TabIndex = 14;
             // 
             // lblorderid
             // 
             this.lblorderid.AutoSize = true;
-            this.lblorderid.Location = new System.Drawing.Point(178, 407);
+            this.lblorderid.Location = new System.Drawing.Point(134, 331);
             this.lblorderid.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblorderid.Name = "lblorderid";
-            this.lblorderid.Size = new System.Drawing.Size(57, 16);
+            this.lblorderid.Size = new System.Drawing.Size(47, 13);
             this.lblorderid.TabIndex = 13;
             this.lblorderid.Text = "Order ID";
             // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(191, 455);
+            this.lblStatus.Location = new System.Drawing.Point(143, 370);
             this.lblStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(44, 16);
+            this.lblStatus.Size = new System.Drawing.Size(37, 13);
             this.lblStatus.TabIndex = 12;
             this.lblStatus.Text = "Status";
             // 
             // dgvgrid
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvgrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvgrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvgrid.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvgrid.Location = new System.Drawing.Point(147, 119);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvgrid.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvgrid.Location = new System.Drawing.Point(110, 97);
+            this.dgvgrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvgrid.Name = "dgvgrid";
             this.dgvgrid.RowHeadersWidth = 51;
             this.dgvgrid.RowTemplate.Height = 24;
-            this.dgvgrid.Size = new System.Drawing.Size(527, 184);
+            this.dgvgrid.Size = new System.Drawing.Size(395, 150);
             this.dgvgrid.TabIndex = 11;
             // 
             // lblUpdateOrderStatus
             // 
             this.lblUpdateOrderStatus.AutoSize = true;
             this.lblUpdateOrderStatus.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUpdateOrderStatus.Location = new System.Drawing.Point(316, 344);
+            this.lblUpdateOrderStatus.Location = new System.Drawing.Point(237, 280);
+            this.lblUpdateOrderStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUpdateOrderStatus.Name = "lblUpdateOrderStatus";
-            this.lblUpdateOrderStatus.Size = new System.Drawing.Size(184, 24);
+            this.lblUpdateOrderStatus.Size = new System.Drawing.Size(152, 19);
             this.lblUpdateOrderStatus.TabIndex = 10;
             this.lblUpdateOrderStatus.Text = "Update Order Status";
             // 
@@ -128,35 +134,39 @@
             // 
             this.lblallorders.AutoSize = true;
             this.lblallorders.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblallorders.Location = new System.Drawing.Point(323, 58);
+            this.lblallorders.Location = new System.Drawing.Point(242, 47);
+            this.lblallorders.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblallorders.Name = "lblallorders";
-            this.lblallorders.Size = new System.Drawing.Size(170, 40);
+            this.lblallorders.Size = new System.Drawing.Size(135, 31);
             this.lblallorders.TabIndex = 9;
             this.lblallorders.Text = "All Orders";
             // 
             // btndelete
             // 
-            this.btndelete.Location = new System.Drawing.Point(320, 715);
+            this.btndelete.Location = new System.Drawing.Point(240, 581);
+            this.btndelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(91, 41);
+            this.btndelete.Size = new System.Drawing.Size(68, 33);
             this.btndelete.TabIndex = 24;
             this.btndelete.Text = "Delete";
             this.btndelete.UseVisualStyleBackColor = true;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // txtorder
             // 
-            this.txtorder.Location = new System.Drawing.Point(228, 666);
+            this.txtorder.Location = new System.Drawing.Point(171, 541);
+            this.txtorder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtorder.Name = "txtorder";
-            this.txtorder.Size = new System.Drawing.Size(289, 22);
+            this.txtorder.Size = new System.Drawing.Size(218, 20);
             this.txtorder.TabIndex = 23;
             // 
             // lblid
             // 
             this.lblid.AutoSize = true;
-            this.lblid.Location = new System.Drawing.Point(166, 672);
+            this.lblid.Location = new System.Drawing.Point(124, 546);
             this.lblid.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblid.Name = "lblid";
-            this.lblid.Size = new System.Drawing.Size(57, 16);
+            this.lblid.Size = new System.Drawing.Size(47, 13);
             this.lblid.TabIndex = 22;
             this.lblid.Text = "Order ID";
             // 
@@ -164,17 +174,18 @@
             // 
             this.lbldelete.AutoSize = true;
             this.lbldelete.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldelete.Location = new System.Drawing.Point(294, 610);
+            this.lbldelete.Location = new System.Drawing.Point(220, 496);
+            this.lbldelete.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbldelete.Name = "lbldelete";
-            this.lbldelete.Size = new System.Drawing.Size(145, 24);
+            this.lbldelete.Size = new System.Drawing.Size(119, 19);
             this.lbldelete.TabIndex = 21;
             this.lbldelete.Text = "Delete an Order";
             // 
             // Manageorders
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 806);
+            this.ClientSize = new System.Drawing.Size(600, 609);
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.txtorder);
             this.Controls.Add(this.lblid);
@@ -187,6 +198,7 @@
             this.Controls.Add(this.dgvgrid);
             this.Controls.Add(this.lblUpdateOrderStatus);
             this.Controls.Add(this.lblallorders);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Manageorders";
             this.Text = "Manageorders";
             ((System.ComponentModel.ISupportInitialize)(this.dgvgrid)).EndInit();
