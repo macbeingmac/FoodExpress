@@ -36,30 +36,34 @@
             // dgvgrid1
             // 
             this.dgvgrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvgrid1.Location = new System.Drawing.Point(137, 165);
+            this.dgvgrid1.Location = new System.Drawing.Point(103, 134);
+            this.dgvgrid1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvgrid1.Name = "dgvgrid1";
             this.dgvgrid1.RowHeadersWidth = 51;
             this.dgvgrid1.RowTemplate.Height = 24;
-            this.dgvgrid1.Size = new System.Drawing.Size(527, 184);
+            this.dgvgrid1.Size = new System.Drawing.Size(395, 150);
             this.dgvgrid1.TabIndex = 27;
+            this.dgvgrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvgrid1_CellContentClick);
             // 
             // lblreviews
             // 
             this.lblreviews.AutoSize = true;
             this.lblreviews.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblreviews.Location = new System.Drawing.Point(317, 101);
+            this.lblreviews.Location = new System.Drawing.Point(238, 82);
+            this.lblreviews.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblreviews.Name = "lblreviews";
-            this.lblreviews.Size = new System.Drawing.Size(196, 40);
+            this.lblreviews.Size = new System.Drawing.Size(158, 31);
             this.lblreviews.TabIndex = 26;
             this.lblreviews.Text = "My Reviews";
             // 
             // Viewreviews
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.dgvgrid1);
             this.Controls.Add(this.lblreviews);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Viewreviews";
             this.Text = "Viewreviews";
             ((System.ComponentModel.ISupportInitialize)(this.dgvgrid1)).EndInit();

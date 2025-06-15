@@ -23,7 +23,7 @@ namespace FoodDeliverySystem.views
 
         private void btnUpdateDetails_Click(object sender, EventArgs e)
         {
-            Updatedetials form = new Updatedetials(loggedInRestaurant.Id);
+            Updatedetials form = new Updatedetials(loggedInRestaurant.GetId());
             form.ShowDialog();
         }
 
@@ -35,7 +35,7 @@ namespace FoodDeliverySystem.views
 
         private void btnViewOrders_Click(object sender, EventArgs e)
         {
-            Manageorders form = new Manageorders(loggedInRestaurant);
+            Vieworders form = new Vieworders(loggedInRestaurant); // already passing the restaurant
             form.ShowDialog();
         }
 

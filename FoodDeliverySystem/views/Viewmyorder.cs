@@ -16,5 +16,10 @@ namespace FoodDeliverySystem.views
         {
             InitializeComponent();
         }
+
+        private void dgvgrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

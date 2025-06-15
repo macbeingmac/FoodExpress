@@ -57,61 +57,67 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvgrid.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvgrid.Location = new System.Drawing.Point(59, 374);
+            this.dgvgrid.Location = new System.Drawing.Point(44, 304);
+            this.dgvgrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvgrid.Name = "dgvgrid";
             this.dgvgrid.RowHeadersWidth = 51;
             this.dgvgrid.RowTemplate.Height = 24;
-            this.dgvgrid.Size = new System.Drawing.Size(533, 184);
+            this.dgvgrid.Size = new System.Drawing.Size(400, 150);
             this.dgvgrid.TabIndex = 17;
+            this.dgvgrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvgrid_CellContentClick);
             // 
             // lblmenulist
             // 
             this.lblmenulist.AutoSize = true;
             this.lblmenulist.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmenulist.Location = new System.Drawing.Point(54, 326);
+            this.lblmenulist.Location = new System.Drawing.Point(40, 265);
+            this.lblmenulist.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblmenulist.Name = "lblmenulist";
-            this.lblmenulist.Size = new System.Drawing.Size(112, 27);
+            this.lblmenulist.Size = new System.Drawing.Size(89, 22);
             this.lblmenulist.TabIndex = 16;
             this.lblmenulist.Text = "Menu List";
             // 
             // lblselectrestaurant
             // 
             this.lblselectrestaurant.AutoSize = true;
-            this.lblselectrestaurant.Location = new System.Drawing.Point(140, 209);
+            this.lblselectrestaurant.Location = new System.Drawing.Point(105, 170);
             this.lblselectrestaurant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblselectrestaurant.Name = "lblselectrestaurant";
-            this.lblselectrestaurant.Size = new System.Drawing.Size(113, 16);
+            this.lblselectrestaurant.Size = new System.Drawing.Size(92, 13);
             this.lblselectrestaurant.TabIndex = 33;
             this.lblselectrestaurant.Text = "Select Restaurent";
             // 
             // cmbselect
             // 
             this.cmbselect.FormattingEnabled = true;
-            this.cmbselect.Location = new System.Drawing.Point(258, 206);
+            this.cmbselect.Location = new System.Drawing.Point(194, 167);
+            this.cmbselect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbselect.Name = "cmbselect";
-            this.cmbselect.Size = new System.Drawing.Size(263, 24);
+            this.cmbselect.Size = new System.Drawing.Size(198, 21);
             this.cmbselect.TabIndex = 36;
             // 
             // lblviewmenu
             // 
             this.lblviewmenu.AutoSize = true;
             this.lblviewmenu.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblviewmenu.Location = new System.Drawing.Point(290, 50);
+            this.lblviewmenu.Location = new System.Drawing.Point(218, 41);
+            this.lblviewmenu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblviewmenu.Name = "lblviewmenu";
-            this.lblviewmenu.Size = new System.Drawing.Size(185, 40);
+            this.lblviewmenu.Size = new System.Drawing.Size(150, 31);
             this.lblviewmenu.TabIndex = 37;
             this.lblviewmenu.Text = "View Menu";
             // 
             // Viewmenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 604);
+            this.ClientSize = new System.Drawing.Size(600, 491);
             this.Controls.Add(this.lblviewmenu);
             this.Controls.Add(this.cmbselect);
             this.Controls.Add(this.lblselectrestaurant);
             this.Controls.Add(this.dgvgrid);
             this.Controls.Add(this.lblmenulist);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Viewmenu";
             this.Text = "Viewmenu";
             ((System.ComponentModel.ISupportInitialize)(this.dgvgrid)).EndInit();
