@@ -71,7 +71,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvgrid.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvgrid.Location = new System.Drawing.Point(105, 84);
-            this.dgvgrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvgrid.Margin = new System.Windows.Forms.Padding(2);
             this.dgvgrid.Name = "dgvgrid";
             this.dgvgrid.RowHeadersWidth = 51;
             this.dgvgrid.RowTemplate.Height = 24;
@@ -92,7 +92,7 @@
             // btnupdate
             // 
             this.btnupdate.Location = new System.Drawing.Point(242, 407);
-            this.btnupdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnupdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(68, 33);
             this.btnupdate.TabIndex = 22;
@@ -103,7 +103,7 @@
             // txtstatus
             // 
             this.txtstatus.Location = new System.Drawing.Point(173, 373);
-            this.txtstatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtstatus.Margin = new System.Windows.Forms.Padding(2);
             this.txtstatus.Name = "txtstatus";
             this.txtstatus.Size = new System.Drawing.Size(218, 20);
             this.txtstatus.TabIndex = 21;
@@ -111,7 +111,7 @@
             // txtorderid
             // 
             this.txtorderid.Location = new System.Drawing.Point(178, 334);
-            this.txtorderid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtorderid.Margin = new System.Windows.Forms.Padding(2);
             this.txtorderid.Name = "txtorderid";
             this.txtorderid.Size = new System.Drawing.Size(218, 20);
             this.txtorderid.TabIndex = 20;
@@ -150,17 +150,18 @@
             // btnassign
             // 
             this.btnassign.Location = new System.Drawing.Point(242, 637);
-            this.btnassign.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnassign.Margin = new System.Windows.Forms.Padding(2);
             this.btnassign.Name = "btnassign";
             this.btnassign.Size = new System.Drawing.Size(68, 33);
             this.btnassign.TabIndex = 28;
             this.btnassign.Text = "Assign";
             this.btnassign.UseVisualStyleBackColor = true;
+            this.btnassign.Click += new System.EventHandler(this.btnassign_Click);
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(166, 603);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(218, 20);
             this.textBox1.TabIndex = 27;
@@ -168,7 +169,7 @@
             // txtdeliverystaffid
             // 
             this.txtdeliverystaffid.Location = new System.Drawing.Point(166, 564);
-            this.txtdeliverystaffid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtdeliverystaffid.Margin = new System.Windows.Forms.Padding(2);
             this.txtdeliverystaffid.Name = "txtdeliverystaffid";
             this.txtdeliverystaffid.Size = new System.Drawing.Size(218, 20);
             this.txtdeliverystaffid.TabIndex = 26;
@@ -207,7 +208,7 @@
             // btndelete
             // 
             this.btndelete.Location = new System.Drawing.Point(242, 804);
-            this.btndelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btndelete.Margin = new System.Windows.Forms.Padding(2);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(68, 33);
             this.btndelete.TabIndex = 32;
@@ -217,7 +218,7 @@
             // txtid
             // 
             this.txtid.Location = new System.Drawing.Point(173, 765);
-            this.txtid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtid.Margin = new System.Windows.Forms.Padding(2);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(218, 20);
             this.txtid.TabIndex = 31;
@@ -266,7 +267,7 @@
             this.Controls.Add(this.lblupdatedeliverystatus);
             this.Controls.Add(this.dgvgrid);
             this.Controls.Add(this.lblmanagedeliveries);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Managedeliveries";
             this.Text = "Managedeliveries";
             ((System.ComponentModel.ISupportInitialize)(this.dgvgrid)).EndInit();
